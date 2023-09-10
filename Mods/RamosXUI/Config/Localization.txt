@@ -1,0 +1,36 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+iron,items,Item,,,Scrap Iron,,Eisen,Hierro,Fer,Ferro,鉄,철제,Żelazo,Ferro,Железо,Demir,铁,鐵
+wood,items,Item,,,Wood,,Holz,Madera,Bois,Legno,木材,목재,Drewno,Madeira,Дерево,Tahta,木头,木頭
+clay,items,Item,,,Clay Soil,,Lehmboden,Terreno de arcilla,Sol en argile,Argilla,粘土層,식토,Gleba gliniasta,Solo argiloso,Глинистый грунт,Killi Toprak,粘土,黏土
+stone,items,Item,,,Small Stone,,Kleiner Stein,Piedra pequeña,Petite pierre,Sasso,小石,작은 돌,Mały kamyk,Pedra pequena,Маленький камень,Küçük Taş,小石子,小石頭
+lead,items,Item,,,Scrap Lead,,Blei,Plomo,Plomb,Piombo,鉛,납,Ołów,Chumbo,Свинец,Kurşun,铅,鉛
+brass,items,Item,,,Scrap Brass,,Messing,Latón,Laiton,Ottone,真ちゅう,놋쇠,Mosiądz,Latão,Латунь,Pirinç,黄铜,黃銅
+paper,items,Item,,,Paper,,Papier,Papel,Papier,Carta,紙,종이,Papier,Papel,Бумага,Kâğıt,纸,紙
+leather,items,Item,,,Leather,,Leder,Cuero,Cuir,Pelle,革,가죽,Skóra,Couro,Кожа,Deri,皮革,皮革
+cloth,items,Item,,,Cloth Fragment,,Stofffetzen,Trozo de tela,Morceau de tissu,Pezzo di stoffa,端切れ,천 조각,Kawałek tkaniny,Fragmento de tecido,Кусок ткани,Kumaş Parçası,碎布,碎布
+plants,items,Item,,,Plant Fibers,,Pflanzenfasern,Fibra vegetal,Fibres végétales,Fibre vegetali,植物繊維,식물 섬유,Włókna roślinne,Fibras vegetais,Волокна травы,Bitki Lifleri,植物纤维,植物纖維
+glass,items,Item,,,Broken Glass,,Zerbrochenes Glas,Cristal roto,Débris de verre,Vetro rotto,壊れたガラス,깨진 유리,Stłuczone szkło,Vidro quebrado,Осколки стекла,Kırık Cam,碎玻璃,碎玻璃
+meleeToolChainsawParts,items,Tool,,,Motor Tool Parts,,Motorwerkzeugteile,Partes de herramienta de motor,Pièces d'outils motorisés,Parti per attrezzi a motore.,動力ツールパーツ,모터 도구 부품,Części narzędzia silnikowego,Peças da ferramenta de motor,Части бензоинструмента,Motorlu Alet Parçaları,电动工具零件,電機工具零件
+YECosts,UI,XUI,,,Price,,Preis,"Precio","Prix",Prezzo,価格,가격,Cena,Preço,Цена,Fiyat,价格,價格
+
+xuiEmptyInfoPanelTextYourEnd0,UI,XUI,,,"Game instructions",,"Spielandleitung","Instrucciones del juego",,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd1,UI,XUI,,,"[DECEA3][LEFT CLICK][-] to inspect an item, recipe or active effect",,"[LINKS-KLICK], um einen Gegenstand, ein Rezept oder einen aktiven Effekt genauer anzusehen","Haz [DECEA3][CLIC IZQUIERDO][-] para inspeccionar un objeto, receta o un efecto activo",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd2,UI,XUI,,,"[DECEA3][LEFT CLICK][-] hold and drag to take a stack",,"[LINKS-KLICK] halten und ziehen, um einen Stapel zu nehmen","Haz [DECEA3][CLIC IZQUIERDO][-] mantén y arrastra para coger un lote",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd3,UI,XUI,,,"[DECEA3][LEFT CLICK][-] to drop or swap a stack",,"[LINKS-KLICK], um einen Stapel abzulegen oder auszutauschen","Haz [DECEA3][CLIC IZQUIERDO][-] para soltar o intercambiar un lote",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd4,UI,XUI,,,"[DECEA3][RIGHT CLICK][-] hold and drag to take a half stack",,"[RECHTS-KLICK] halten und ziehen, um einen halben Stapel zu nehmen","Haz [DECEA3][CLIC DERECHO][-] mantén y arrastra para coger medio lote",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd5,UI,XUI,,,"[DECEA3][RIGHT CLICK][-] to drop one item at a time",,"[RECHTS-KLICK], um Gegenstände einzeln abzulegen","Haz [DECEA3][CLIC DERECHO][-] para soltar un objeto una vez",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd6,UI,XUI,,,"[DECEA3][SHIFT CLICK][-] to move a stack between areas / containers",,"[SHIFT-KLICK], um einen Stapel zwischen Gebieten/Behältern zu verschieben","[DECEA3]Presiona SHIFT y haz clic[-] para mover un lote entre zonas/contenedores",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd7,UI,XUI,,,"[DECEA3][R][-] to take everything from a container",,"[R], um alles aus einem Behälter zu nehmen","[DECEA3][R][-] para coger todo lo que hay en un contenedor",,,,,,,,,,,,
+
+YEAmmoName,UI,XUI,,,Ammo,,Munition,Munición,Munitions,Munizioni,弾薬：,탄약,Amunicja,Munição,Боеприпасы,Mühimmat,弹药,彈藥
+YEMatIsName,UI,XUI,,,"Material",,"Stoff","Material",,,,,,,,,,,,
+YERepairIsName,UI,XUI,,,"Repair with",,"Repariert mit","Se repara con",,,,,,,,,,,,
+YEToolRequiredName,UI,XUI,,,"Tool",,"Werkzeuge","Herramienta",,,,,,,,,,,,
+YECountName,UI,XUI,,,"Output count",,"Ausgabe","Salida de fabricación",,,,,,,,,,,,
+YEAreaName,UI,XUI,,,"Crafted in",,"Handwerk Bereich","Se fabrica en",,,,,,,,,,,,
+YEyouNeed,UI,XUI,,,"You Need",,"Bedarf","Necesitas",,,,,,,,,,,,
+YEyouHave,UI,XUI,,,"You Have",,"Besitz","Tienes",,,,,,,,,,,,
+
+VersionMain,UI,XUI,,,"[00DEFF]VERSION: 2.0 Stable",,"[00DEFF]VERSION: 2.0 Stable","[00DEFF]VERSION: 2.0 Stable",,,,,,,,,,,,,
+ModVersion,UI,XUI,,,",Xui 2.0",,",Xui 2.0",",Xui 2.0",,,,,,,,,,,,,

@@ -1,0 +1,15 @@
+<!-- CTVI New Dew collectors -->
+<configs>
+	<append xpath="/recipes">
+		<!-- adds recipe for silver collector -->
+		<recipe name="cntDewCollectorsilver" count="1" tags="learnable,workbenchCrafting">
+			<ingredient name="cntDewCollector" count="1"/>
+			<ingredient name="resourceForgedIron" count="25"/>
+		</recipe>
+		<!-- adds recipe for gold collector -->
+		<recipe name="cntDewCollectorgold" count="1" tags="learnable,workbenchCrafting">
+			<ingredient name="cntDewCollectorsilver" count="1"/>
+			<ingredient name="resourceForgedSteel" count="25"/>
+		</recipe>
+	</append>	
+</configs>

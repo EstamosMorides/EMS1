@@ -1,0 +1,29 @@
+<config>
+
+	<append xpath="/worldgeneration/pois/poi[@name='City Asphalt']">
+		<blockontop blockname="cntVehicleBlocks" prob="0.005" />
+
+	</append>
+	
+	<append xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']">
+		<blockontop blockname="cntVehicleBlocks" prob="0.0006" />
+
+	</append>
+	
+	<append xpath="/worldgeneration/pois/poi[@name='Road Gravel']">
+		<blockontop blockname="cntVehicleBlocks" prob="0.0006" />
+
+	</append>	
+
+
+
+
+
+
+
+
+	
+</config>
+
+
+

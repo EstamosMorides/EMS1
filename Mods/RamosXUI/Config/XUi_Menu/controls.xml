@@ -1,0 +1,18 @@
+<controls>
+
+	<append xpath="/controls">
+
+		
+		<!--menu principal-->
+		<!-- <Rmainmenubutton depth="3" pos="0,0" width="275" height="32"
+			enabled_font_color="[labelColor]" disabled_font_color="[disabledLabelColor]" visible="true" enabled="true" pivot="left" tooltip_key="" sound="[default_click]" caption="" caption_key="" >
+			<rect name="${name}" depth="1" pos="0,0" width="275" height="32" enabled_font_color="${enabled_font_color}" disabled_font_color="${disabled_font_color}" controller="SimpleButton" visible="${visible}" button_enabled="${enabled}" font_size_default="32" font_size_hover="32">
+				<button name="clickable" sprite="menu_empty3px" width="275" height="50" flip="horizontally" pos="0,0" defaultcolor="20,30,42,255" hovercolor="0,138,255,180" type="sliced" hoverscale="1" pivot="center" tooltip_key="${tooltip_key}" sound_play_on_hover="[default_hover]" sound="${sound}"/>
+				<label depth="2" name="btnLabel" pos="0,0" width="265" height="32" justify="center" hoverscale="1" text="${caption}" text_key="${caption_key}" effect="outline" pivot="center" font_size="32" upper_case="true" />
+			</rect>
+		</Rmainmenubutton> -->
+
+		
+	</append>
+
+</controls>

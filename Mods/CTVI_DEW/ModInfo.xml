@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	  <Name value="CTVI_DEW" />
+	  <Author value="CTVI" />
+	  <Description value="CTVI mod that adds in 2 new dew collectors which give more water, are faster, have more hit points and reduced heatmap. Designed for servers to improve performance." />
+	  <DisplayName value="CTVI Dew" />
+	  <Website value="https://www.ctvizombies.com/" />
+	  <Version value="1.0.0" />
+	</xml>

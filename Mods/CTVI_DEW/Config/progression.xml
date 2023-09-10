@@ -1,0 +1,8 @@
+<!-- CTVI New Dew collectors -->
+<configs>
+	<!-- set at what level of workstations the recipes will be unlocked -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="cntDewCollectorsilver"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="cntDewCollectorgold"/>
+	</append>	
+</configs>

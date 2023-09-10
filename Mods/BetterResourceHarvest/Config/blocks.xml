@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+    <!--
+    ######################################################
+        BLOCK MASTER
+    ######################################################
+    -->
+
+    <!-- GRASS (treeGrassMaster) -->
+    <!-- materials.xml | <material id="Mtallgrass"> | 1 HP -->
+    <set xpath="/blocks/block[@name='treeGrassMaster']/drop[@event='Harvest'][@name='resourceYuccaFibers'][@tag='allHarvest']/@count">1,4</set> <!-- default 2 -->
+
+
+    <!-- STONE (oreBoulderMaster) -->
+    <!-- materials.xml | <material id="MoreStone"> | 600 HP -->
+    <set xpath="/blocks/block[@name='oreBoulderMaster']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">12,22</set> <!-- default 14 -->
+    <!--
+    <append xpath="/blocks/block[@name='oreBoulderMaster']">
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+    -->
+
+
+    <!-- TREES (treeMaster) -->
+    <!-- materials.xml | <material id="MtreeWoodSmall"> | 300 HP -->
+    <set xpath="/blocks/block[@name='treeMaster']/drop[@event='Harvest'][@name='foodHoney'][@tag='WasteTreasuresHoneyHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='treeMaster']/drop[@event='Harvest'][@name='foodHoney'][@tag='WasteTreasuresHoneyHarvest']/@prob">0.05</set> <!-- default .05 -->
+
+
+    <!--
+    plantedtreeGrassSeed1 (Mtallgrass)
+        <drop event="Harvest" name="resourceYuccaFibers" count="1" tag="allHarvest"/>
+        <drop event="Destroy" count="0"/>
+
+    plantedSnowberry1
+        <drop event="Destroy" name="plantedSnowberry1" count="1"/>
+    plantedSnowberry2
+        <drop event="Destroy" name="plantedSnowberry1" count="1"/>
+    plantedSnowberry3Harvest
+        <drop event="Harvest" name="resourceYuccaFibers" count="2" tag="allHarvest"/>
+    plantedSnowberry3HarvestPlayer
+-->
+
+
+    <!--
+    ######################################################
+        DEAD BODYS (decorative blocks)
+    ######################################################
+    -->
+
+    <!-- ANIMAL BLOCK (goreBlockAnimal) -->
+    <!-- materials.xml | <material id="Morganic"> | 100 HP -->
+    <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest'][@name='foodRottingFlesh'][@tag='allHarvest'][@tool_category='Butcher']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest'][@name='foodRottingFlesh'][@tag='butcherHarvest']/@count">2,4</set> <!-- default 1,3 -->
+    <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest'][@name='resourceAnimalFat'][@tag='butcherHarvest']/@count">2,4</set> <!-- default 1,2 -->
+    <set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Harvest'][@name='resourcePotassiumNitratePowder'][@tag='butcherHarvest']/@count">6,12</set> <!-- default 4,8 -->
+    <remove xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='goreBlockAnimal']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceBone" count="5,10" tag="butcherHarvest"/>
+    </append>
+
+
+    <!-- HUMAN CORPSE (goreBlockHumanCorpse) -->
+    <!-- materials.xml | <material id="Morganic"> | 100 HP -->
+    <set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Harvest'][@name='foodRottingFlesh'][@tag='allHarvest'][@tool_category='Butcher']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Harvest'][@name='foodRottingFlesh'][@tag='butcherHarvest']/@count">2,4</set> <!-- default 1,3 -->
+    <set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Harvest'][@name='resourcePotassiumNitratePowder'][@tag='butcherHarvest']/@count">6,12</set> <!-- default 4,8 -->
+    <remove xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='goreBlockHumanCorpse']"> <!-- create new nodes -->
+        <drop event="Harvest" name="resourceAnimalFat" count="2,4" tag="butcherHarvest"/>
+        <drop event="Destroy" name="resourceBone" count="5,10" tag="butcherHarvest"/>
+    </append>
+
+
+    <!-- HUMAN BONES (goreBlockHumanBones) -->
+    <!-- materials.xml | <material id="Morganic"> | 50 HP -->
+    <set xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Harvest'][@name='resourcePotassiumNitratePowder'][@tag='butcherHarvest'][@tool_category='Butcher']/@count">4,8</set> <!-- default 2,4 -->
+    <remove xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='goreBlockHumanBones']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceBone" count="5,10" tag="butcherHarvest"/>
+    </append>
+
+
+    <!-- HUMAN BODY BAG (bodyBagBlack) -->
+    <!-- materials.xml | <material id="Morganic"> | 200 HP -->
+    <set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest'][@name='foodRottingFlesh'][@tool_category='Butcher']/@count">2,5</set> <!-- default 1,3 -->
+    <set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest'][@name='resourceAnimalFat'][@tag='butcherHarvest']/@count">2,4</set> <!-- default 1,2 -->
+    <set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest'][@name='resourceAnimalFat'][@tag='butcherHarvest']/@prob">0.50</set> <!-- default 0.33 -->
+    <set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest'][@name='resourcePotassiumNitratePowder'][@tag='butcherHarvest']/@count">6,12</set> <!-- default 4,8 -->
+    <set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest'][@name='resourceBone'][@tag='butcherHarvest']/@count">8,12</set> <!-- default 6,10 -->
+    <remove xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='bodyBagBlack']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceScrapPolymers" count="1,2"/>
+    </append>
+
+    <!--
+    ######################################################
+        CROPS (wild - poi)
+    ######################################################
+    -->
+
+    <!-- MUSHROOM (mushroom01) -->
+    <!-- materials.xml | <material id="Mmushrooms"> | 1 HP -->
+    <set xpath="/blocks/block[@name='mushroom01']/drop[@event='Harvest'][@name='foodCropMushrooms'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='mushroom01']/drop[@event='Harvest'][@name='foodCropMushrooms'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <remove xpath="/blocks/block[@name='mushroom01']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='mushroom01']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedMushroom1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- MUSHROOM (plantedMushroom3Harvest) -->
+    <!-- materials.xml | <material id="Mmushrooms"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedMushroom3Harvest']/drop[@event='Harvest'][@name='foodCropMushrooms'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedMushroom3Harvest']/drop[@event='Harvest'][@name='foodCropMushrooms'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <remove xpath="/blocks/block[@name='plantedMushroom3Harvest']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='plantedMushroom3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedMushroom1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- YUCCA (plantedYucca3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedYucca3Harvest']/drop[@event='Harvest'][@name='foodCropYuccaFruit'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedYucca3Harvest']/drop[@event='Harvest'][@name='foodCropYuccaFruit'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedYucca3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedYucca1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- COTTON (plantedCotton3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest'][@name='resourceCropCottonPlant'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedCotton3Harvest']/drop[@event='Harvest'][@name='resourceCropCottonPlant'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedCotton3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedCotton1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- COFFEE (plantedCoffee3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCoffee3Harvest']/drop[@event='Harvest'][@name='resourceCropCoffeeBeans'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedCoffee3Harvest']/drop[@event='Harvest'][@name='resourceCropCoffeeBeans'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedCoffee3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedCoffee1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- GOLDENROD (plantedGoldenrod3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod3Harvest']/drop[@event='Harvest'][@name='resourceCropGoldenrodPlant'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod3Harvest']/drop[@event='Harvest'][@name='resourceCropGoldenrodPlant'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedGoldenrod1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- ALOE VERA (plantedAloe3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedAloe3Harvest']/drop[@event='Harvest'][@name='resourceCropAloeLeaf'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedAloe3Harvest']/drop[@event='Harvest'][@name='resourceCropAloeLeaf'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedAloe3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedAloe1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- BLUEBERRY (plantedBlueberry3Harvest) -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedBlueberry3Harvest']/drop[@event='Harvest'][@name='foodCropBlueberries'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedBlueberry3Harvest']/drop[@event='Harvest'][@name='foodCropBlueberries'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedBlueberry3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedBlueberry1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- POTATO (plantedPotato3Harvest) -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPotato3Harvest']/drop[@event='Harvest'][@name='foodCropPotato'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedPotato3Harvest']/drop[@event='Harvest'][@name='foodCropPotato'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedPotato3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedPotato1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- CHRYSANTHEMUM (plantedChrysanthemum3Harvest) -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']/drop[@event='Harvest'][@name='resourceCropChrysanthemumPlant'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']/drop[@event='Harvest'][@name='resourceCropChrysanthemumPlant'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedChrysanthemum1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- CORN (plantedCorn3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCorn3Harvest']/drop[@event='Harvest'][@name='foodCropCorn'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedCorn3Harvest']/drop[@event='Harvest'][@name='foodCropCorn'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedCorn3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedCorn1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- DEAD CORN (plantedCornDead) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <remove xpath="/blocks/block[@name='plantedCornDead']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='plantedCornDead']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceYuccaFibers" count="3,12"/>
+        <drop event="Destroy" name="plantedCorn1" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- GRACE CORN (plantedGraceCorn3Harvest) -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn3Harvest']/drop[@event='Harvest'][@name='foodCropGraceCorn'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn3Harvest']/drop[@event='Harvest'][@name='foodCropGraceCorn'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedGraceCorn1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- HOPS (plantedHop3Harvest) -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedHop3Harvest']/drop[@event='Harvest'][@name='resourceCropHopsFlower'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedHop3Harvest']/drop[@event='Harvest'][@name='resourceCropHopsFlower'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedHop3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedHop1" prob="0.25" count="1"/>
+    </append>
+
+
+    <!-- PUMPKIN (plantedPumpkin3Harvest) -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPumpkin3Harvest']/drop[@event='Harvest'][@name='foodCropPumpkin'][@tag='wildCropsHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedPumpkin3Harvest']/drop[@event='Harvest'][@name='foodCropPumpkin'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <append xpath="/blocks/block[@name='plantedPumpkin3Harvest']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedPumpkin1" prob="0.25" count="1"/>
+    </append>
+
+    <!--
+    ######################################################
+        CROPS (planted - player)
+    ######################################################
+    -->
+
+    <!-- MUSHROOM (plantedMushroom1) | stage 1 -->
+    <!-- materials.xml | <material id="Mmushrooms"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedMushroom1']/drop[@event='Destroy'][@name='plantedMushroom1']/@count">1</set> <!-- default 1 -->
+
+    <!-- MUSHROOM (plantedMushroom2) | stage 2 -->
+    <!-- materials.xml | <material id="Mmushrooms"> | 1 HP -->
+    <append xpath="/blocks/block[@name='plantedMushroom2']"> <!-- create new nodes -->
+        <drop event="Destroy" name="plantedMushroom1" count="1"/>
+    </append>
+
+    <!-- MUSHROOM (plantedMushroom3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id="Mmushrooms"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropMushrooms'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropMushrooms'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Destroy'][@name='plantedMushroom1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- YUCCA (plantedYucca1) | stage 1 -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedYucca1']/drop[@event='Destroy'][@name='plantedYucca1']/@count">1</set> <!-- default 1 -->
+
+    <!-- YUCCA (plantedYucca2) | stage 2 -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedYucca2']/drop[@event='Destroy'][@name='plantedYucca1']/@count">1</set> <!-- default 1 -->
+
+    <!-- YUCCA (plantedYucca3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropYuccaFruit'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropYuccaFruit'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Destroy'][@name='plantedYucca1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- COTTON (plantedCotton1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCotton1']/drop[@event='Destroy'][@name='plantedCotton1']/@count">1</set> <!-- default 1 -->
+
+    <!-- COTTON (plantedCotton2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCotton2']/drop[@event='Destroy'][@name='plantedCotton1']/@count">1</set> <!-- default 1 -->
+
+    <!-- COTTON (plantedCotton3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropCottonPlant'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropCottonPlant'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCotton1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- COFFEE (plantedCoffee1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCoffee1']/drop[@event='Destroy'][@name='plantedCoffee1']/@count">1</set> <!-- default 1 -->
+
+    <!-- COFFEE (plantedCoffee2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCoffee2']/drop[@event='Destroy'][@name='plantedCoffee1']/@count">1</set> <!-- default 1 -->
+
+    <!-- COFFEE (plantedCoffee3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropCoffeeBeans'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropCoffeeBeans'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCoffee1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- GOLDENROD (plantedGoldenrod1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod1']/drop[@event='Destroy'][@name='plantedGoldenrod1']/@count">1</set> <!-- default 1 -->
+
+    <!-- GOLDENROD (plantedGoldenrod2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod2']/drop[@event='Destroy'][@name='plantedGoldenrod1']/@count">1</set> <!-- default 1 -->
+
+    <!-- GOLDENROD (plantedGoldenrod3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropGoldenrodPlant'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropGoldenrodPlant'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Destroy'][@name='plantedGoldenrod1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- ALOE VERA (plantedAloe1) | stage 1 -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedAloe1']/drop[@event='Destroy'][@name='plantedAloe1']/@count">1</set> <!-- default 1 -->
+
+    <!-- ALOE VERA (plantedAloe2) | stage 2 -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedAloe2']/drop[@event='Destroy'][@name='plantedAloe1']/@count">1</set> <!-- default 1 -->
+
+    <!-- ALOE VERA (plantedAloe3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropAloeLeaf'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropAloeLeaf'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Destroy'][@name='plantedAloe1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- BLUEBERRY (plantedBlueberry1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedBlueberry1']/drop[@event='Destroy'][@name='plantedBlueberry1']/@count">1</set> <!-- default 1 -->
+
+    <!-- BLUEBERRY (plantedBlueberry2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedBlueberry2']/drop[@event='Destroy'][@name='plantedBlueberry1']/@count">1</set> <!-- default 1 -->
+
+    <!-- BLUEBERRY (plantedBlueberry3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropBlueberries'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropBlueberries'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Destroy'][@name='plantedBlueberry1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- POTATO (plantedPotato1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPotato1']/drop[@event='Destroy'][@name='plantedPotato1']/@count">1</set> <!-- default 1 -->
+
+    <!-- POTATO (plantedPotato2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPotato2']/drop[@event='Destroy'][@name='plantedPotato1']/@count">1</set> <!-- default 1 -->
+
+    <!-- POTATO (plantedPotato3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropPotato'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropPotato'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Destroy'][@name='plantedPotato1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- CHRYSANTHEMUM (plantedChrysanthemum1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum1']/drop[@event='Destroy'][@name='plantedChrysanthemum1']/@count">1</set> <!-- default 1 -->
+
+    <!-- CHRYSANTHEMUM (plantedChrysanthemum2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum2']/drop[@event='Destroy'][@name='plantedChrysanthemum1']/@count">1</set> <!-- default 1 -->
+
+    <!-- CHRYSANTHEMUM (plantedChrysanthemum3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropChrysanthemumPlant'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropChrysanthemumPlant'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Destroy'][@name='plantedChrysanthemum1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- CORN (plantedCorn1) | stage 1 -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCorn1']/drop[@event='Destroy'][@name='plantedCorn1']/@count">1</set> <!-- default 1 -->
+
+    <!-- CORN (plantedCorn2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCorn2']/drop[@event='Destroy'][@name='plantedCorn1']/@count">1</set> <!-- default 1 -->
+
+    <!-- CORN (plantedCorn3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropCorn'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropCorn'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCorn1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- GRACE CORN (plantedGraceCorn1) | stage 1 -->
+    <!-- materials.xml | <material id="Mcorn"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn1']/drop[@event='Destroy'][@name='plantedGraceCorn1']/@count">1</set> <!-- default 1 -->
+
+    <!-- GRACE CORN (plantedGraceCorn2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn2']/drop[@event='Destroy'][@name='plantedGraceCorn1']/@count">1</set> <!-- default 1 -->
+
+    <!-- GRACE CORN (plantedGraceCorn3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropGraceCorn'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropGraceCorn'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy'][@name='plantedGraceCorn1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- HOPS (plantedHop1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedHop1']/drop[@event='Destroy'][@name='plantedHop1']/@count">1</set> <!-- default 1 -->
+
+    <!-- HOPS (plantedHop2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedHop2']/drop[@event='Destroy'][@name='plantedHop1']/@count">1</set> <!-- default 1 -->
+
+    <!-- HOPS (plantedHop3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropHopsFlower'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Harvest'][@name='resourceCropHopsFlower'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Destroy'][@name='plantedHop1']/@count">1,2</set> <!-- default 1 -->
+
+
+    <!-- PUMPKIN (plantedPumpkin1) | stage 1 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPumpkin1']/drop[@event='Destroy'][@name='plantedPumpkin1']/@count">1</set> <!-- default 1 -->
+
+    <!-- PUMPKIN (plantedPumpkin2) | stage 2 -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPumpkin2']/drop[@event='Destroy'][@name='plantedPumpkin1']/@count">1</set> <!-- default 1 -->
+
+    <!-- PUMPKIN (plantedPumpkin3HarvestPlayer) | stage 3 | harvestable -->
+    <!-- materials.xml | <material id=""> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropPumpkin'][@tag='cropHarvest']/@count">2,3</set> <!-- default 2 -->
+    <set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Harvest'][@name='foodCropPumpkin'][@tag='bonusCropHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Destroy'][@name='plantedPumpkin1']/@count">1,2</set> <!-- default 1 -->
+
+    <!--
+    ######################################################
+        ORES (decorative blocks)
+    ######################################################
+    -->
+
+    <!-- ROCK (decorative block) | breakable (3x) -->
+    <!-- materials.xml | <material id="Mboulder"> | 400 HP -->
+    <set xpath="/blocks/block[@name='rockResource']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">20,36</set> <!-- default 22 -->
+    <!--
+        DEFAULT:
+        rockResource        = count 22 * 3 = 66 but 62?
+        rockResourceBroke1  = count 20, why?
+        rockResourceBroke2  = count 20, why?
+    -->
+    <remove xpath="/blocks/block[@name='rockResource']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='rockResource']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceRockSmall" prob="0.50" count="6,18"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+
+    <!-- IRON (decorative block) | @MASTER (STONE) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='oreIronBoulder']/drop[@event='Harvest'][@name='resourceScrapIron'][@tag='oreWoodHarvest']/@count">95,171</set> <!-- default 105 -->
+    <append xpath="/blocks/block[@name='oreIronBoulder']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceScrapIron" prob="0.25" count="6,36"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+
+    <!-- LEAD (decorative block) | @MASTER (STONE) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='oreLeadBoulder']/drop[@event='Harvest'][@name='resourceScrapLead'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <append xpath="/blocks/block[@name='oreLeadBoulder']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceScrapLead" prob="0.25" count="6,18"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+
+    <!-- COAL (decorative block) | @MASTER (STONE) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='oreCoalBoulder']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <set xpath="/blocks/block[@name='oreCoalBoulder']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">45,81</set> <!-- default 50 -->
+    <append xpath="/blocks/block[@name='oreCoalBoulder']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceCoal" prob="0.25" count="6,18"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+
+    <!-- NITRATE (decorative block) | @MASTER (STONE) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='orePotassiumNitrateBoulder']/drop[@event='Harvest'][@name='resourcePotassiumNitratePowder'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <append xpath="/blocks/block[@name='orePotassiumNitrateBoulder']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourcePotassiumNitratePowder" prob="0.25" count="6,18"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+
+    <!-- OIL SHALE (decorative block) | @MASTER (STONE) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='oreShaleBoulder']/drop[@event='Harvest'][@name='resourceOilShale'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <append xpath="/blocks/block[@name='oreShaleBoulder']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceOilShale" prob="0.25" count="6,18"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+    <!--
+    ######################################################
+        TERRAIN
+    ######################################################
+    -->
+
+    <!-- DIRT (terrForestGround) -->
+    <!-- materials.xml | <material id="MforestGround"> | 200 HP -->
+    <set xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest'][@name='resourceClayLump'][@tag='oreWoodHarvest']/@count">20,36</set> <!-- default 22 -->
+    <set xpath="/blocks/block[@name='terrForestGround']/drop[@event='Harvest'][@name='resourceYuccaFibers'][@tag='allHarvest']/@count">1,4</set> <!-- default 2 -->
+    <remove xpath="/blocks/block[@name='terrForestGround']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrForestGround']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceClayLump" prob="0.25" count="6,18"/>
+    </append>
+
+
+    <!-- DIRT (terrBurntForestGround) -->
+    <!-- materials.xml | <material id="MforestGround"> | 200 HP -->
+    <set xpath="/blocks/block[@name='terrBurntForestGround']/drop[@event='Harvest'][@name='resourceClayLump'][@tag='oreWoodHarvest']/@count">20,36</set> <!-- default 22 -->
+    <remove xpath="/blocks/block[@name='terrBurntForestGround']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrBurntForestGround']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceClayLump" prob="0.25" count="6,18"/>
+        <drop event="Destroy" name="resourceYuccaFibers" prob="0.25" count="1,2"/> <!-- default 0.25 / 1 -->
+    </append>
+
+
+    <!-- DIRT (terrDesertGround) -->
+    <!-- materials.xml | <material id="MDesertGround"> | 180 HP -->
+    <set xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest'][@name='resourceClayLump'][@tag='oreWoodHarvest']/@count">8,15</set> <!-- default 9 -->
+    <set xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Harvest'][@name='resourceCrushedSand'][@tag='oreWoodHarvest']/@count">8,15</set> <!-- default 9 -->
+    <remove xpath="/blocks/block[@name='terrDesertGround']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrDesertGround']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceClayLump" prob="0.25" count="2,6"/>
+        <drop event="Destroy" name="resourceCrushedSand" prob="0.15" count="1,4"/>
+    </append>
+
+
+    <!-- DIRT (terrDirt) -->
+    <!-- materials.xml | <material id="Mdirt"> | 200 HP -->
+    <set xpath="/blocks/block[@name='terrDirt']/drop[@event='Harvest'][@name='resourceClayLump'][@tag='oreWoodHarvest']/@count">20,36</set> <!-- default 22 -->
+    <remove xpath="/blocks/block[@name='terrDirt']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrDirt']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceClayLump" prob="0.25" count="6,18"/>
+    </append>
+
+
+    <!-- DIRT (terrSand) -->
+    <!-- materials.xml | <material id="Msand"> | 100 HP -->
+    <set xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest'][@name='resourceCrushedSand'][@tag='oreWoodHarvest']/@count">10,18</set> <!-- default 11 -->
+    <set xpath="/blocks/block[@name='terrSand']/drop[@event='Harvest'][@name='resourceClayLump'][@tag='oreWoodHarvest']/@count">1,4</set> <!-- default 2 -->
+    <append xpath="/blocks/block[@name='terrSand']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceCrushedSand" prob="0.25" count="2,6"/>
+        <drop event="Destroy" name="resourceClayLump" prob="0.15" count="1,4"/>
+    </append>
+
+
+    <!-- DIRT (terrSnow) -->
+    <!-- materials.xml | <material id="Msnow"> | 50 HP -->
+    <set xpath="/blocks/block[@name='terrSnow']/drop[@event='Harvest'][@name='resourceSnowBall'][@tag='oreWoodHarvest']/@count">10,18</set> <!-- default 11 -->
+    <remove xpath="/blocks/block[@name='terrSnow']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrSnow']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceSnowBall" prob="0.25" count="1,4"/>
+    </append>
+
+    <!--
+    ######################################################
+        ORE VEINS (terrain resources)
+    ######################################################
+    -->
+
+    <!-- STONE (terrStone) -->
+    <!-- materials.xml | <material id="Mstone"> | 500 HP -->
+    <set xpath="/blocks/block[@name='terrStone']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 55 -->
+    <remove xpath="/blocks/block[@name='terrStone']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrStone']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceRockSmall" prob="0.25" count="6,18"/>
+        <drop event="Harvest" name="resourceSilverNugget" prob="0.008" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceGoldNugget" prob="0.006" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+        <drop event="Harvest" name="resourceRawDiamond" prob="0.004" count="1,2" tag="artOfMiningLuckyStrikeHarvest"/>
+    </append>
+
+
+    <!-- IRON (terrOreIron) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceScrapIron'][@tag='oreWoodHarvest']/@count">95,171</set> <!-- default 105 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">12,22</set> <!-- default 14 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.011</set> <!-- default .01 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.008</set> <!-- default .007 -->
+    <set xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.006</set> <!-- default .005 -->
+    <remove xpath="/blocks/block[@name='terrOreIron']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrOreIron']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceScrapIron" prob="0.25" count="6,18"/>
+    </append>
+
+
+    <!-- LEAD (terrOreLead) -->
+    <!-- materials.xml | <material id="MoreMetal"> | 600 HP -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceScrapLead'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">12,22</set> <!-- default 14 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.011</set> <!-- default .01 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.008</set> <!-- default .007 -->
+    <set xpath="/blocks/block[@name='terrOreLead']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.006</set> <!-- default .005 -->
+    <remove xpath="/blocks/block[@name='terrOreLead']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrOreLead']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceScrapLead" prob="0.25" count="6,18"/>
+    </append>
+
+
+    <!-- COAL (terrOreCoal) -->
+    <!-- materials.xml | <material id="MoreStone"> | 600 HP -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">45,81</set> <!-- default 50 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">12,22</set> <!-- default 14 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.011</set> <!-- default .01 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.008</set> <!-- default .007 -->
+    <set xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.006</set> <!-- default .005 -->
+    <remove xpath="/blocks/block[@name='terrOreCoal']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrOreCoal']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceCoal" prob="0.25" count="6,18"/>
+    </append>
+
+
+    <!-- NITRATE (terrOrePotassiumNitrate) -->
+    <!-- materials.xml | <material id="MoreStone"> | 600 HP -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourcePotassiumNitratePowder'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">14,28</set> <!-- default 14 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.011</set> <!-- default .01 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.008</set> <!-- default .007 -->
+    <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.006</set> <!-- default .005 -->
+    <remove xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrOrePotassiumNitrate']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourcePotassiumNitratePowder" prob="0.25" count="6,18"/>
+    </append>
+
+
+    <!-- OIL SHALE (terrOreOilDeposit) -->
+    <!-- materials.xml | <material id="MoreStone"> | 600 HP -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceOilShale'][@tag='oreWoodHarvest']/@count">45,81</set> <!-- default 50 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceRockSmall'][@tag='oreWoodHarvest']/@count">12,22</set> <!-- default 14 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@count">1,2</set> <!-- default 1 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceSilverNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.011</set> <!-- default .01 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceGoldNugget'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.008</set> <!-- default .007 -->
+    <set xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Harvest'][@name='resourceRawDiamond'][@tag='artOfMiningLuckyStrikeHarvest']/@prob">0.006</set> <!-- default .005 -->
+    <remove xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='terrOreOilDeposit']"> <!-- create new nodes -->
+        <drop event="Destroy" name="resourceOilShale" prob="0.25" count="6,18"/>
+    </append>
+
+    <!--
+    ######################################################
+        TREES
+    ######################################################
+    -->
+
+    <!-- JUNIPER 4M (treeJuniper4m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeJuniper4m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treeJuniper4m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeJuniper4m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- DEAD TREE 01 (treeDeadTree01) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeDeadTree01']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+
+
+    <!-- DEAD TREE 02 (treeDeadTree02) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeDeadTree02']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+
+
+    <!-- OAK SMALL (treeOakSml01) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeOakSml01']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treeOakSml01']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeOakSml01']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK MEDIUM (treeOakMed01) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeOakMed01']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">62,96</set> <!-- default 70 -->
+    <remove xpath="/blocks/block[@name='treeOakMed01']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeOakMed01']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK MEDIUM (treeOakMed02) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeOakMed02']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treeOakMed02']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeOakMed02']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK LARGE (treeOakLrg01) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeOakLrg01']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treeOakLrg01']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeOakLrg01']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK 1M (treePlantedOak1m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <remove xpath="/blocks/block[@name='treePlantedOak1m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedOak1m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.50" count="1"/>
+    </append>
+
+
+    <!-- OAK 8M (treePlantedOak08m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treePlantedOak08m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treePlantedOak08m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedOak08m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK 16M (treePlantedOak16m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treePlantedOak16m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">62,96</set> <!-- default 70 -->
+    <remove xpath="/blocks/block[@name='treePlantedOak16m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedOak16m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK 27M (treePlantedOak27m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treePlantedOak27m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treePlantedOak27m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedOak27m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- OAK 41M (treePlantedOak41m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treePlantedOak41m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treePlantedOak41m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedOak41m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedOak1m" count="1"/>
+        <drop event="Destroy" name="treePlantedOak1m" prob="0.15" count="1"/>
+    </append>
+
+    <!-- TREE GRASS SEED (plantedtreeGrassSeed1) -->
+    <!-- materials.xml | <material id="Mtallgrass"> | 1 HP -->
+    <set xpath="/blocks/block[@name='plantedtreeGrassSeed1']/drop[@event='Harvest'][@name='resourceYuccaFibers'][@tag='allHarvest']/@count">1,3</set> <!-- default 1 -->
+
+    <!-- PLAINS TREE (treePlainsTree) -->
+    <!-- materials.xml | <material id="Mleaves"> | 1 HP -->
+    <set xpath="/blocks/block[@name='treePlainsTree']/drop[@event='Harvest'][@name='resourceWood'][@tag='allHarvest']/@count">2,6</set> <!-- default 1,5 -->
+
+
+    <!-- PINE LEAF (treeDeadPineLeaf) -->
+    <!-- materials.xml | <material id="Mleaves"> | 1 HP -->
+    <set xpath="/blocks/block[@name='treeDeadPineLeaf']/drop[@event='Harvest'][@name='resourceWood'][@tag='allHarvest']/@count">1,4</set> <!-- default 1,3 -->
+
+
+    <!-- SNOWY DEAD BUSH (treeSnowyDeadBush) -->
+    <!-- materials.xml | <material id="Mleaves"> | 1 HP -->
+    <set xpath="/blocks/block[@name='treeSnowyDeadBush']/drop[@event='Harvest'][@name='resourceWood'][@tag='allHarvest']/@count">1,4</set> <!-- default 1,3 -->
+
+
+    <!-- AZALEA (treeAzalea) -->
+    <!-- materials.xml | <material id="Mleaves"> | 1 HP -->
+    <set xpath="/blocks/block[@name='treeAzalea']/drop[@event='Harvest'][@name='resourceWood'][@tag='allHarvest']/@count">1,4</set> <!-- default 1,3 -->
+
+
+    <!-- MOUNTAIN PINE 12M (treeMountainPine12m) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeMountainPine12m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treeMountainPine12m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPine12m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 19M (treeMountainPine19m) -->
+    <!-- materials.xml | <material id="MtreeWoodMedium"> | 600 HP -->
+    <set xpath="/blocks/block[@name='treeMountainPine19m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">62,96</set> <!-- default 70 -->
+    <remove xpath="/blocks/block[@name='treeMountainPine19m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPine19m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 27M (treeMountainPine27m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treeMountainPine27m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treeMountainPine27m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPine27m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 31M (treeMountainPine31m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treeMountainPine31m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treeMountainPine31m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPine31m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 41M (treeMountainPine41m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treeMountainPine41m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treeMountainPine41m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPine41m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 48M (treeMountainPine48m) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treeMountainPine48m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">160,212</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treeMountainPine48m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPine48m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE DRY 21M (treeMountainPineDry21m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treeMountainPineDry21m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treeMountainPineDry21m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeMountainPineDry21m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE DRY 21M (treePineBurntLrg) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <set xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">14,48</set> <!-- default 15,30 -->
+    <set xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">14,48</set> <!-- default 15,30 -->
+    <remove xpath="/blocks/block[@name='treePineBurntLrg']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePineBurntLrg']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- PINE BURNT MEDIUM (treePineBurntMed) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <set xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">10,36</set> <!-- default 11,22 -->
+    <set xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">10,36</set> <!-- default 11,22 -->
+    <remove xpath="/blocks/block[@name='treePineBurntMed']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePineBurntMed']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- PINE BURNT FULL MEDIUM (treePineBurntFullMed) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <set xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">10,36</set> <!-- default 11,22 -->
+    <set xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">10,36</set> <!-- default 11,22 -->
+    <remove xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePineBurntFullMed']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- FIRE LARGE 01 (treeFirLrg01) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treeFirLrg01']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treeFirLrg01']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeFirLrg01']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 1M (treePlantedMountainPine1m) -->
+    <!-- materials.xml | <material id="Mplants"> | 1 HP -->
+    <set xpath="/blocks/block[@name='treePlantedMountainPine1m']/drop[@event='Destroy']/@count">1</set> <!-- default 1 -->
+
+
+    <!-- MOUNTAIN PINE 12M (treePlantedMountainPine12m) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 600 HP -->
+    <set xpath="/blocks/block[@name='treePlantedMountainPine12m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treePlantedMountainPine12m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedMountainPine12m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 19M (treePlantedMountainPine19m) -->
+    <!-- materials.xml | <material id="MtreeWoodMedium"> | 600 HP -->
+    <set xpath="/blocks/block[@name='treePlantedMountainPine19m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">62,96</set> <!-- default 70 -->
+    <remove xpath="/blocks/block[@name='treePlantedMountainPine19m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedMountainPine19m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 27M (treePlantedMountainPine27m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treePlantedMountainPine27m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treePlantedMountainPine27m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedMountainPine27m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- MOUNTAIN PINE 41M (treePlantedMountainPine41m) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treePlantedMountainPine41m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treePlantedMountainPine41m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedMountainPine41m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedMountainPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER EVER GREEN (treeWinterEverGreen) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeWinterEverGreen']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treeWinterEverGreen']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeWinterEverGreen']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 13M (treeWinterPine13m) -->
+    <!-- materials.xml | <material id="MtreeWoodMedium"> | 600 HP -->
+    <set xpath="/blocks/block[@name='treeWinterPine13m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">62,96</set> <!-- default 70 -->
+    <remove xpath="/blocks/block[@name='treeWinterPine13m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeWinterPine13m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 19M (treeWinterPine19m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treeWinterPine19m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treeWinterPine19m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeWinterPine19m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 28M (treeWinterPine28m) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treeWinterPine28m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treeWinterPine28m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeWinterPine28m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 6M (treePlantedWinterPine6m) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treePlantedWinterPine6m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <remove xpath="/blocks/block[@name='treePlantedWinterPine6m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedWinterPine6m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 13M (treePlantedWinterPine13m) -->
+    <!-- materials.xml | <material id="MtreeWoodMedium"> | 600 HP -->
+    <set xpath="/blocks/block[@name='treePlantedWinterPine13m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">62,96</set> <!-- default 70 -->
+    <remove xpath="/blocks/block[@name='treePlantedWinterPine13m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedWinterPine13m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 19M (treePlantedWinterPine19m) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treePlantedWinterPine19m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <remove xpath="/blocks/block[@name='treePlantedWinterPine19m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedWinterPine19m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- WINTER PINE 28M (treePlantedWinterPine28m) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treePlantedWinterPine28m']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">140,178</set> <!-- default 150 -->
+    <remove xpath="/blocks/block[@name='treePlantedWinterPine28m']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treePlantedWinterPine28m']"> <!-- create new nodes -->
+        <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+        <drop event="Destroy" name="treePlantedWinterPine1m" prob="0.15" count="1"/>
+    </append>
+
+
+    <!-- TREE STUMP (treeStump) -->
+    <!-- materials.xml | <material id="MtreeWoodSmall"> | 300 HP -->
+    <set xpath="/blocks/block[@name='treeStump']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">18,48</set> <!-- default 20,30 -->
+    <remove xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeStump']"> <!-- create new nodes -->
+        <drop event="Destroy" name="foodHoney" prob="0.40" count="1,2"/>
+    </append>
+
+
+    <!-- TREE STUMP POI (treeStumpPOI) -->
+    <!-- materials.xml | <material id="MtreeWoodSmall"> | 300 HP -->
+    <set xpath="/blocks/block[@name='treeStumpPOI']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">18,48</set> <!-- default 20,30 -->
+    <remove xpath="/blocks/block[@name='treeStumpPOI']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeStumpPOI']"> <!-- create new nodes -->
+        <drop event="Destroy" name="foodHoney" prob="0.80" count="1,2"/>
+    </append>
+
+
+    <!-- BURNT MAPLE 01 (treeBurntMaple01) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeBurntMaple01']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">28,56</set> <!-- default 30 -->
+    <set xpath="/blocks/block[@name='treeBurntMaple01']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">2,12</set> <!-- default 3,8 -->
+    <set xpath="/blocks/block[@name='treeBurntMaple01']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">2,12</set> <!-- default 3,8 -->
+
+
+    <!-- BURNT MAPLE 02 (treeBurntMaple02) -->
+    <!-- materials.xml | <material id="MtreeWoodLarge"> | 900 HP -->
+    <set xpath="/blocks/block[@name='treeBurntMaple02']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 110 -->
+    <set xpath="/blocks/block[@name='treeBurntMaple02']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">10,36</set> <!-- default 11,22 -->
+    <set xpath="/blocks/block[@name='treeBurntMaple02']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">10,36</set> <!-- default 11,22 -->
+
+
+    <!-- BURNT MAPLE 03 (treeBurntMaple03) -->
+    <!-- materials.xml | <material id="MtreeWoodFull"> | 1200 HP -->
+    <set xpath="/blocks/block[@name='treeBurntMaple03']/drop[@event='Harvest'][@name='resourceWood'][@tag='oreWoodHarvest']/@count">100,138</set> <!-- default 150 -->
+    <set xpath="/blocks/block[@name='treeBurntMaple03']/drop[@event='Harvest'][@name='resourceCoal'][@tag='oreWoodHarvest']/@count">14,48</set> <!-- default 15,30 -->
+    <set xpath="/blocks/block[@name='treeBurntMaple03']/drop[@event='Harvest'][@name='resourceCoal'][@tag='coalHarvest']/@count">14,48</set> <!-- default 15,30 -->
+
+
+    <!-- CACTUS 01 (treeCactus01) -->
+    <!-- materials.xml | <material id="Mcactus"> | 100 HP -->
+    <set xpath="/blocks/block[@name='treeCactus01']/drop[@event='Harvest'][@name='resourceYuccaFibers'][@tag='oreWoodHarvest']/@count">8,14</set> <!-- default 10 -->
+    <remove xpath="/blocks/block[@name='treeCactus01']/drop[@event='Destroy']"/> <!-- removed to set a new node -->
+    <append xpath="/blocks/block[@name='treeCactus01']"> <!-- create new nodes -->
+        <drop event="Destroy" name="foodCropYuccaFruit" count="2,4"/>
+        <drop event="Destroy" name="resourceYuccaFibers" count="2,6"/>
+    </append>
+
+
+    <!-- CACTUS 02 (treeCactus02) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeCactus02']/drop[@event='Destroy'][@name='foodCropYuccaFruit']/@count">2,5</set> <!-- default 3 -->
+
+
+    <!-- CACTUS 03 (treeCactus03) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeCactus03']/drop[@event='Destroy'][@name='foodCropYuccaFruit']/@count">2,5</set> <!-- default 3 -->
+
+
+    <!-- CACTUS 04 (treeCactus04) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeCactus04']/drop[@event='Destroy'][@name='foodCropYuccaFruit']/@count">2,4</set> <!-- default 2 -->
+
+
+    <!-- CACTUS 05 (treeCactus05) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeCactus05']/drop[@event='Destroy'][@name='foodCropYuccaFruit']/@count">2,4</set> <!-- default 2 -->
+
+
+    <!-- CACTUS 06 (treeCactus06) -->
+    <!-- materials.xml | <material id=""> | ??? HP -->
+    <set xpath="/blocks/block[@name='treeCactus06']/drop[@event='Destroy'][@name='foodCropYuccaFruit']/@count">2,5</set> <!-- default 3 -->
+
+
+</configs>

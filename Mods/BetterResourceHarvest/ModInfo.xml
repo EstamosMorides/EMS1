@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <ModInfo>
+        <Name value="BetterResourceHarvest"/>
+        <Description value="better resource harvest for ores, trees, plants, animals and corpse"/>
+        <Author value="ExoKayne"/>
+        <Version value="1.0.0" compat="A20.7 B1 (stable)"/>
+        <Website value="https://exokayne.com/"/>
+    </ModInfo>
+</xml>

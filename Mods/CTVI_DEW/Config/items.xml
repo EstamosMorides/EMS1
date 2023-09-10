@@ -1,0 +1,53 @@
+<!-- CTVI New Dew collectors -->
+
+<configs>
+	<!-- adds new chest containing stack of 3 water -->
+	<append xpath="/items">
+		<item name="drinkJarBoiledWater3xStack">
+			<property name="CustomIcon" value="drinkJarBoiledWater"/><property name="CustomIconTint" value="C0C0C0"/> <!-- Gives silver Tint -->
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="DescriptionKey" value="drinkJarBoiledWater3xStackDesc"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/> <!-- stack set to 1 to force opening and storing normal water -->
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="0.2"/>
+			<property name="Group" value="Resources"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="drinkJarBoiledWater"/>
+				<property name="Create_item_count" value="3"/>
+			</property>
+		</item>
+	</append>
+	<!-- adds new chest containing stack of 10 water -->
+	<append xpath="/items">
+		<item name="drinkJarBoiledWater10xStack">
+			<property name="CustomIcon" value="drinkJarBoiledWater"/><property name="CustomIconTint" value="FFD700"/> <!-- Gives gold Tint -->
+			<property name="ItemTypeIcon" value="treasure"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="DescriptionKey" value="drinkJarBoiledWater10xStackDesc"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/> <!-- stack set to 1 to force opening and storing normal water -->
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="0.2"/>
+			<property name="Group" value="Resources"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="drinkJarBoiledWater"/>
+				<property name="Create_item_count" value="10"/>
+			</property>
+		</item>
+	</append>
+	
+</configs>

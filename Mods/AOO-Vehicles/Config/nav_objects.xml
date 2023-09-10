@@ -1,0 +1,115 @@
+<configs>
+	<append xpath="/nav_object_classes">
+
+
+		
+		<nav_object_class name="SuperCar01" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="SuperCar01"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="SuperCar01"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+		<nav_object_class name="SuperCar02" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="SuperCar02"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="SuperCar02"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+		<nav_object_class name="SuperCar03" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="SuperCar03"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="SuperCar03"/>
+			</onscreen_settings>
+		</nav_object_class>			
+
+		<nav_object_class name="BattleCar01" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BattleCar01"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BattleCar01"/>
+			</onscreen_settings>
+		</nav_object_class>			
+
+		<nav_object_class name="BattleCar02" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BattleCar02"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BattleCar02"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+		<nav_object_class name="BattleCar03" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BattleCar03"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BattleCar03"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+		<nav_object_class name="BattleCar04" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BattleCar04"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BattleCar04"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+		<nav_object_class name="BattleCar05" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BattleCar05"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BattleCar05"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+		<nav_object_class name="BattleCar06" extends="bicycle">
+			<property name="requirement_type" value="IsVehicleOwner" />
+
+			<compass_settings>
+				<property name="sprite_name" value="BattleCar06"/>
+			</compass_settings>
+
+			<onscreen_settings>
+				<property name="sprite_name" value="BattleCar06"/>
+			</onscreen_settings>
+		</nav_object_class>	
+
+	</append>
+</configs>

@@ -1,0 +1,157 @@
+<config>
+	<append xpath="/items">
+		<item name="vehicleSuperCar01Placeable">
+			<property name="CustomIcon" value="SuperCar03"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vfuel,vlight"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?SuperCar01"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleSuperCar01"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleSuperCar02Placeable">
+			<property name="CustomIcon" value="SuperCar03"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vfuel,vlight"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?SuperCar02"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleSuperCar02"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+
+		<item name="vehicleSuperCar03Placeable">
+			<property name="CustomIcon" value="SuperCar03"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vfuel,vlight"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?SuperCar03"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleSuperCar03"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleBattle01Placeable">
+			<property name="CustomIcon" value="BattleCar01"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?BattleCar01"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBattle01"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleBattle02Placeable">
+			<property name="CustomIcon" value="BattleCar02"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?BattleCar02"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBattle02"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+			</effect_group>
+		</item>	
+		
+		<item name="vehicleBattle03Placeable">
+			<property name="CustomIcon" value="BattleCar03"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?BattleCar03"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBattle03"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+			</effect_group>
+		</item>	
+		
+		<item name="vehicleBattle04Placeable">
+			<property name="CustomIcon" value="BattleCar04"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?BattleCar04"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBattle04"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+			</effect_group>
+		</item>	
+		
+		<item name="vehicleBattle05Placeable">
+			<property name="CustomIcon" value="BattleCar05"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?BattleCar05"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBattle05"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+			</effect_group>
+		</item>	
+		
+		<item name="vehicleBattle06Placeable">
+			<property name="CustomIcon" value="BattleCar06"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Vehicles.unity3d?BattleCar06"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBattle06"/>
+				<property name="VehicleSize" value="1.3, 1.9, 3"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000"/>
+			</effect_group>
+		</item>			
+		
+	</append>
+</config>

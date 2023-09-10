@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+cntDewCollectorsilver,blocks,block,,,Silver Dew Collector,,,,,,,,,,,,,,
+cntDewCollectorsilverDesc,blocks,block,,,"Silver Dew Collector. This collect a new item that contain a chest with 3 boiled waters.\nRepair with polymers",,,,,,,,,,,,,,
+cntDewCollectorgold,blocks,block,,,Gold Dew Collector,,,,,,,,,,,,,,
+cntDewCollectorgoldDesc,blocks,block,,,"Gold Dew Collector. This collect a new item that contain a chest with 10 boiled waters.\nRepair with polymers",,,,,,,,,,,,,,
+drinkJarBoiledWater3xStack,items,Food,,,Water 3x stack chest,,,,,,,,,,,,,,
+drinkJarBoiledWater3xStackDesc,items,Food,,,"Water 3x stack chest\nOpen to claim your boiled water.",,,,,,,,,,,,,,
+drinkJarBoiledWater10xStack,items,Food,,,Water 10x stack chest,,,,,,,,,,,,,,
+drinkJarBoiledWater10xStackDesc,items,Food,,,"Water 10x stack chest\nOpen to claim your boiled water.",,,,,,,,,,,,,,

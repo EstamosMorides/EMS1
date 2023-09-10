@@ -1,0 +1,95 @@
+<!-- CTVI New Dew collectors -->
+
+<configs>
+	<append xpath="/blocks">
+	<!-- adds new dew collector -->
+		<block name="cntDewCollectorsilver">
+			<property name="Class" value="DewCollector"/>
+			<property name="CustomIcon" value="cntDewCollector"/>
+			<property name="TintColor" value="C0C0C0"/> <!-- Gives silver Tint -->
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="cntDewCollectorsilverDesc"/>
+			<property name="Material" value="MFuelBarrelPolymer"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/collectorDewPrefab"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="RestrictSubmergedPlacement" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="ConvertSound" value="bucketfill_water"/>
+			<property name="MinConvertTime" value="19800" /> <!-- Default for in game dew cellector 21600 Game Seconds = 6 Game Hours. Now set to 5.5 -->
+			<property name="MaxConvertTime" value="34200" /> <!-- Default for in game dew cellector 36000 Game Seconds = 10 Game Hours. Now set to 9.5 -->
+			<property name="ConvertToItem" value="drinkJarBoiledWater3xStack" />
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="MaxDamage" value="600"/> <!-- Default for in game dew cellector 200. Now set to 3x -->
+			<property name="HeatMapStrength" value="0.7"/> <!-- Default for in game dew cellector set at 2. Now set to 0.7 -->
+			<property name="HeatMapTime" value="5000"/> <!-- Default for in game dew cellector. Set the value for how long the heat impact will stay around. Set to 5 hours max.  -->
+			<property name="HeatMapFrequency" value="1000"/> <!-- Default for in game dew cellector. Sets the frequency the strength will increase heatmap. Set to every hour. -->
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="30"/>
+			</property>
+			<drop event="Destroy" name="cntDewCollectorsilver" count="1"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0100"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="CTVI_DEW"/>
+		</block>
+		<!-- adds new dew collector -->
+		<block name="cntDewCollectorgold">
+			<property name="Class" value="DewCollector"/>
+			<property name="CustomIcon" value="cntDewCollector"/>
+			<property name="TintColor" value="FFD700"/> <!-- Gives gold Tint -->
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="cntDewCollectorgoldDesc"/>
+			<property name="Material" value="MFuelBarrelPolymer"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/collectorDewPrefab"/>
+			<property name="MultiBlockDim" value="3,3,3"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="RestrictSubmergedPlacement" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="ConvertSound" value="bucketfill_water"/>
+			<property name="MinConvertTime" value="14400" /> <!-- Default for in game dew cellector 21600 Game Seconds = 6 Game Hours. Now set to 4 -->
+			<property name="MaxConvertTime" value="28800" /> <!-- Default for in game dew cellector 36000 Game Seconds = 10 Game Hours. Now set to 8 -->
+			<property name="ConvertToItem" value="drinkJarBoiledWater10xStack" />
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="MaxDamage" value="2000"/> <!-- Default for in game dew cellector 200. Now set to 10x -->
+			<property name="HeatMapStrength" value="0.2"/> <!-- Default for in game dew cellector set at 2. Now set to 0.2  -->
+			<property name="HeatMapTime" value="5000"/> <!-- Default for in game dew cellector. Set the value for how long the heat impact will stay around. Set to 5 hours max.  -->
+			<property name="HeatMapFrequency" value="1000"/> <!-- Default for in game dew cellector. Sets the frequency the strength will increase heatmap. Set to every hour.  -->
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="50"/>
+			</property>
+			<drop event="Destroy" name="cntDewCollectorgold" count="1"/>
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0100"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="CTVI_DEW"/>
+		</block>
+	</append>	
+	
+</configs>
