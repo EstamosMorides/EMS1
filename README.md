@@ -101,6 +101,22 @@ You then hand in existing collectors plus iron for silver or steel or gold to ma
 * Buffed all food items food/water/health amounts
 * Added water to some things that I felt should have water like blueberries
 
+#### <a id="qol6"></a>[Rolyatja - Increased Zombie Loot Bags][qol6]
+![qol6img]<br>
+
+Too many zombie loot drop chance mods increase the values excessively, and provide too much loot. I wanted the increase to be reasonable, and scale according to the difficulty of the zombie type. It makes sense to be rewarded a bit more for killing tougher zombies. Therefore the zombie loot drop probability is increased a reasonable 3-4x. Below is the breakdown of the probability increase.
+
+Loot Drop Probability Differences:
+
+* Normal Zombie Drop Chance: LootProb (Old) = 2% ->  LootProb (New) = 6% (3x Increase)
+* Screamer Zombie Drop Chance: LootProb (Old) = 2% ->  LootProb (New) = 6% (3x Increase)
+* Feral Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 9% (3x Increase)
+* Feral Screamer Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 9% (3x Increase)
+* Mutated Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 9% (3x Increase)
+* Radiated Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 12% (4x Increase)
+* Demolisher Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 12% (4x Increase)
+
+
 ### <a id="em"></a>#EstamosMorides Custom Mods/Settings
 
 ---
@@ -139,6 +155,9 @@ You then hand in existing collectors plus iron for silver or steel or gold to ma
 [qol5]: <https://7daystodiemods.com/imagine-better-food/> "Imagine: Better Food"
 [qol5img]: <https://7daystodiemods.com/wp-content/uploads/2023/07/7-days-to-die-imagine-better-food.jpg>
 [qol5img2]: <https://7daystodiemods.com/wp-content/uploads/2023/07/7-days-to-die-imagine-better-food-additional-screenshot.jpg>
+
+[qol6]: <https://www.nexusmods.com/7daystodie/mods/2414> "Rolyatja - Increased Zombie Loot Bags"
+[qol6img]: <https://staticdelivery.nexusmods.com/mods/1059/images/headers/2414_1662689024.jpg>
 
 [oc]: <https://7daystodiemods.com/oakraven-collection/> "Oakraven Collection"
 [ocb]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-3.jpg>

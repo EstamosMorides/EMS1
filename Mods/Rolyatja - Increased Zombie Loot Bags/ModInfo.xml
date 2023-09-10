@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Rolyatja-Increased_Zombie_Loot_Bags" />
+	<DisplayName value="Rolyatja - Increased Zombie Loot Bags" />
+	<Version value="21.1.16.1" />
+	<Description value="Adjusts probability of zombie loot bag drop chance. Values are increased as the zombies get tougher." /> 
+	<Author value="Rolyatja" />
+	<Website value="" />
+</xml>
