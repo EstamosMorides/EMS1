@@ -1,0 +1,11 @@
+<EstamosMorides>
+  <!-- EstamosMorides // Longer Loot Bags  -->
+  <set xpath="/entity_classes/entity_class[contains(@name, 'EntityLoot')]/property[contains(@name, 'TimeStayAfterDeath')]/@value">3600</set>
+  <set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">3600</set>
+  
+  <!-- Dead zombies stay only for 10 seconds (Improve performance) -->
+  <append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+    <property name="TimeStayAfterDeath" value="10"/>
+    <property name="DeadBodyHitPoints" value="1"/>
+  </append>
+</EstamosMorides>

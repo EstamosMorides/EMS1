@@ -13,6 +13,8 @@
 * [Better Resource Harvest](#qol2)
 * [Boosted Supply Crates](#qol8)
 * [CTVI - Dew Collectors](#qol4)
+* [Donovan - Better Vehicles](#don2)
+* [Donovan - More books](#don1)
 * [Feel - Better Stacks](#qol1)
 * [Feel - Battery Banks Extended](#feel1)
 * [Feel - Generators Extended](#feel2)
@@ -156,6 +158,20 @@ An attempt at a boosted supply crate that isn't completely overpowered
 #### <a id="feel4"></a>[Feel - Wire Relays Extended][feel4]
 ![feel4img]
 
+#### <a id="don1"></a>[Donovan - More Books][don1]
+![don1img]<br>
+Books can be rather scarce, especially in book piles. This mod increases your chances of finding books in shelves and in book piles.
+
+Includes:
+* Perk Books
+* Schematics
+* Skill Magazines
+
+#### <a id="don2"></a>[Donovan - Better Vehicles][don2]
+![don2img]
+* Increased Storage
+* All vehicles are now 25% faster normal speed, and double that for turbo mode.
+
 ---
 
 [ui]: <https://7daystodiemods.com/ramos-backpack-xui/> "Ramos XUI"
@@ -209,6 +225,11 @@ An attempt at a boosted supply crate that isn't completely overpowered
 [ocb]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-3.jpg>
 [occ]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-2.jpg>
 [ocd]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection.jpg>
+
+[don1]: <https://7daystodiemods.com/more-books/> "Donovan - More Books"
+[don1img]: <https://7daystodiemods.com/wp-content/uploads/2022/02/7-days-to-die-more-books.jpg>
+[don2]: <https://7daystodiemods.com/better-vehicles/> "Donovan - Better Vehicles"
+[don2img]: <https://7daystodiemods.com/wp-content/uploads/2020/01/7dtd-better-vehicles.jpg>
 
 [feel1]: <https://www.nexusmods.com/7daystodie/mods/3123> "Feel - Battery Banks Extended"
 [feel1img]: <https://staticdelivery.nexusmods.com/mods/1059/images/3123/3123-1688224237-1685053567.png>
