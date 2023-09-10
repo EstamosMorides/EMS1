@@ -1,7 +1,7 @@
 # #EstamosMorides Season 1
 
 ## Map 
-[Download](/Map/7%20Days%20to%20Die%20Airport-2786-2-3-0-1693382065.zip)
+[Download](https://1drv.ms/f/s!AidE62zHPOc8golU5dgUcA5btugDhQ?e=dFHiRG)
 ![Map](https://staticdelivery.nexusmods.com/mods/1059/images/2786/2786-1688867971-1313054947.png)
 ![Airport](https://staticdelivery.nexusmods.com/mods/1059/images/2786/2786-1693382092-1182799588.jpeg)
 
@@ -9,6 +9,7 @@
 * [5.56 Gun Pack](#ui1)
 * [7.62 Gun Pack](#guns2)
 * [Alternative Ammo Icons](#ui2)
+* [AGF - HUD PLUS](#agf)
 * [AOO vehicles](#v1)
 * [Better Resource Harvest](#qol2)
 * [Boosted Supply Crates](#qol8)
@@ -25,7 +26,10 @@
 * [Oakraven - Chicken Coops](#occ)
 * [Oakraven - Rock Drill](#ocd)
 * [OCB Stop Fuel Waste](#qol7)
-* [Ramos XUI](#ui1)
+* [PhD Bigger Backpack & Secure Storage Chests](#phd)
+* [PhD Bigger Crafting Queue](#phd2)
+* [PhD Bigger Forge Input](#phd3)
+* [PhD Bigger Output Queue](#phd4)
 * [Rolyatja - Increased Zombie Loot Bags](#qol6)
 * [Shotgun Pack](#guns3)
 * [Working Ovens](#qol3)
@@ -41,10 +45,34 @@
 * Improve quantity and prob in BirdsNest. Also drop seeds
 
 ### UI
-#### <a id="ui1"></a>[Ramos XUI][ui]
-![uiimg]
+#### <a id="agf"></a>[AGF - HUD PLUS][agf]
+![agfimg]
+![agfimg2]
+![agfimg3]
+![agfimg4]
+
+#### <a id="phd"></a>[PhD Bigger Backpack & Secure Storage Chests][phd]
+![phdimg]
+
+#### <a id="phd2"></a>[PhD Bigger Crafting Queue][phd2]
+![phd2img]
+
+#### <a id="phd3"></a>[PhD Bigger Forge Input][phd3]
+![phd3img]
+
+#### <a id="phd4"></a>[PhD Bigger Output Queue][phd4]
+![phd4img]
+
 #### <a id="ui2"></a>[Alternative Ammo Icons][ui2]
 ![ui2img]
+
+#### <a id="qol5"></a>[Imagine: Better Food][qol5]
+![qol5img]
+![qol5img2]
+* 79 New food icons to replace vanilla icons
+* Added MRE style food items that can only be obtained in airdrops
+* ~~Buffed all food items food/water/health amounts~~
+* Added water to some things that I felt should have water like blueberries
 
 ### Guns
 #### <a id="guns1"></a>[5.56 Gun Pack][guns1]
@@ -112,14 +140,6 @@ This adds two new dew collectors with some extra progression for players. The pu
 You unlock the new collectors by reading forge ahead at level 3 and 10
 You then hand in existing collectors plus iron for silver or steel or gold to make a higher level collector which gives more water.
 
-#### <a id="qol5"></a>[Imagine: Better Food][qol5]
-![qol5img]
-![qol5img2]
-* 79 New food icons to replace vanilla icons
-* Added MRE style food items that can only be obtained in airdrops
-* Buffed all food items food/water/health amounts
-* Added water to some things that I felt should have water like blueberries
-
 #### <a id="qol6"></a>[Rolyatja - Increased Zombie Loot Bags][qol6]
 ![qol6img]<br>
 
@@ -173,9 +193,6 @@ Includes:
 * All vehicles are now 25% faster normal speed, and double that for turbo mode.
 
 ---
-
-[ui]: <https://7daystodiemods.com/ramos-backpack-xui/> "Ramos XUI"
-[uiimg]: <https://7daystodiemods.com/wp-content/uploads/2023/08/7-days-to-die-ramos-backpack-xui-1.jpg>
 
 [ui2]: <https://7daystodiemods.com/alternative-ammo-icons/> "Alternative Ammo Icons"
 [ui2img]: <https://7daystodiemods.com/wp-content/uploads/2022/09/7-days-to-die-alternative-ammo-icons.jpg>
@@ -239,3 +256,18 @@ Includes:
 [feel3img]: <https://staticdelivery.nexusmods.com/mods/1059/images/956/956-1688228711-825113685.png>
 [feel4]: <https://www.nexusmods.com/7daystodie/mods/3126> "Feel - Wire Relays Extended"
 [feel4img]: <https://staticdelivery.nexusmods.com/mods/1059/images/3126/3126-1688229566-1806526418.png>
+
+[agf]: <https://www.nexusmods.com/7daystodie/mods/870> "AGF - HUD PLUS"
+[agfimg]: <https://staticdelivery.nexusmods.com/mods/1059/images/870/870-1689136502-1734197690.png>
+[agfimg2]: <https://staticdelivery.nexusmods.com/mods/1059/images/870/870-1689101424-1990534191.png>
+[agfimg3]: <https://staticdelivery.nexusmods.com/mods/1059/images/870/870-1691330231-961151078.png>
+[agfimg4]: <https://staticdelivery.nexusmods.com/mods/1059/images/870/870-1689101437-1519482735.png>
+
+[phd]: <https://www.nexusmods.com/7daystodie/mods/912> "PhD Bigger Backpack & Secure Storage Chests"
+[phdimg]: <https://staticdelivery.nexusmods.com/mods/1059/images/912/912-1692040237-154016869.png>
+[phd2]: <https://www.nexusmods.com/7daystodie/mods/384> "PhD Bigger Crafting Queue"
+[phd2img]: <https://staticdelivery.nexusmods.com/mods/1059/images/384/384-1692041378-788184191.png>
+[phd3]: <https://www.nexusmods.com/7daystodie/mods/918> "PhD Bigger Forge Input"
+[phd3img]: <https://staticdelivery.nexusmods.com/mods/1059/images/918/918-1692039940-258817182.png>
+[phd4]: <https://www.nexusmods.com/7daystodie/mods/1042> "PhD Bigger Output Queue"
+[phd4img]: <https://staticdelivery.nexusmods.com/mods/1059/images/1042/1042-1692039309-625285746.png>
