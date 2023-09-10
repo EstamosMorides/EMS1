@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xml>
-	<ModInfo>
-		<Name value="EstamosMorides" />
-		<Description value="A modified gameplay for casual gamers" />
-		<Author value="burger" />
-		<Version value="1.0" />
-	</ModInfo>
+	<Name value="EstamosMorides" />
+	<DisplayName value="EstamosMorides" />
+	<Description value="A modified gameplay for casual gamers" />
+	<Author value="burger" />
+	<Version value="1.0" />
+	<Website value="" />
 </xml>
