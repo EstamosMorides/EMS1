@@ -11,12 +11,15 @@
 * [Alternative Ammo Icons](#ui2)
 * [AOO vehicles](#v1)
 * [Better Resource Harvest](#qol2)
+* [CTVI - Dew Collectors](#qol4)
+* [Imagine: Better Food](#qol5)
 * [Oakraven - Bee Hives](#ocb)
 * [Oakraven - Chicken Coops](#occ)
 * [Oakraven - Rock Drill](#ocd)
 * [Ramos XUI](#ui1)
 * [Shotgun Pack](#guns3)
 * [Working Ovens](#qol3)
+* [#EstamosMorides Mods](#em)
 
 ### UI
 #### <a id="ui1"></a>[Ramos XUI][ui]
@@ -63,8 +66,6 @@ The Oakraven Bee Hives Mod allows players to receive honey comb through bee keep
 ![occ]<br>
 The Oakraven Chicken Coops allow players to receive feathers, eggs, and grown domestic chickens from eggs. To activate a Coop, use 2 caught chicks found in birds’ nests.
 
-
-
 #### <a id="ocd"></a>[Oakraven - Rock Drill][oc]
 ![ocd]<br>
 This mod allows us to mine for resources.
@@ -83,6 +84,24 @@ List of furnaces available for restoration:
 * Old stove (All options)
 * Modern stove (All options)
 * Gas stove (All options)
+
+#### <a id="qol4"></a>[CTVI Dew Collectors][qol4]
+![qol4img]
+![qol4img2]<br>
+This adds two new dew collectors with some extra progression for players. The purpose is to help reduce performance impacts to servers. It is pure server side mod but can also be used in single player.
+
+You unlock the new collectors by reading forge ahead at level 3 and 10
+You then hand in existing collectors plus iron for silver or steel or gold to make a higher level collector which gives more water.
+
+#### <a id="qol5"></a>[Imagine: Better Food][qol5]
+![qol5img]
+![qol5img2]
+* 79 New food icons to replace vanilla icons
+* Added MRE style food items that can only be obtained in airdrops
+* Buffed all food items food/water/health amounts
+* Added water to some things that I felt should have water like blueberries
+
+### <a id="em"></a>#EstamosMorides Custom Mods/Settings
 
 ---
 
@@ -112,6 +131,14 @@ List of furnaces available for restoration:
 
 [qol3]: <https://www.nexusmods.com/7daystodie/mods/2968> "Working Ovens"
 [qol3img]: <https://staticdelivery.nexusmods.com/mods/1059/images/2968/2968-1686822922-1551717257.png>
+
+[qol4]: <https://www.nexusmods.com/7daystodie/mods/3500> "CTVI Dew Collectors"
+[qol4img]: <https://staticdelivery.nexusmods.com/mods/1059/images/3500/3500-1691839529-1589724311.jpeg>
+[qol4img2]: <https://staticdelivery.nexusmods.com/mods/1059/images/3500/3500-1691839565-1497558938.png>
+
+[qol5]: <https://7daystodiemods.com/imagine-better-food/> "Imagine: Better Food"
+[qol5img]: <https://7daystodiemods.com/wp-content/uploads/2023/07/7-days-to-die-imagine-better-food.jpg>
+[qol5img2]: <https://7daystodiemods.com/wp-content/uploads/2023/07/7-days-to-die-imagine-better-food-additional-screenshot.jpg>
 
 [oc]: <https://7daystodiemods.com/oakraven-collection/> "Oakraven Collection"
 [ocb]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-3.jpg>
