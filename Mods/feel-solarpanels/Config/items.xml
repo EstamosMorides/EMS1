@@ -1,0 +1,4 @@
+<configs>
+    <set xpath="/items/item[@name='questRewardSolarBankBundle']/property[@class='Action0']/property[@name='Create_item']/@value">solarbank,solarCell,solarCell,solarCell,electricwirerelay,meleeToolWireTool,electricianSkillMagazine,FeelSolarpanelSmallBlockVariantHelper,FeelSolarpanelMediumBlockVariantHelper,FeelSolarpanelLargeBlockVariantHelper,FeelSolarpanelPortableBlockVariantHelper,FeelSolarpanel_1,FeelSolarpanel_2,FeelSolarpanel_15,FeelSolarpanel_16,FeelSolarpanel_17</set>
+    <set xpath="/items/item[@name='questRewardSolarBankBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">0-1,1-4,1-4,1-4,10,1,3,0-1,0-1,0-1,0-1,0-1,0-1,0-1,0-1,0-1</set>
+</configs>

@@ -1,0 +1,26 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="FeelBatterybankBlockVariantHelper" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="40"/> <!-- 4x default value -->
+			<ingredient name="resourceElectricParts" count="44"/> <!-- 4x default value -->
+			<ingredient name="resourceScrapPolymers" count="24"/> <!-- 4x default value -->
+		</recipe>
+		<recipe name="FeelBatteryboxLargeBlockVariantHelper" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="30"/> <!-- 3x default value -->
+			<ingredient name="resourceElectricParts" count="33"/> <!-- 3x default value -->
+			<ingredient name="resourceScrapPolymers" count="18"/> <!-- 3x default value -->
+		</recipe>
+		
+		<recipe name="FeelBatteryboxMediumBlockVariantHelper" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="20"/> <!-- 2x default value -->
+			<ingredient name="resourceElectricParts" count="22"/> <!-- 2x default value -->
+			<ingredient name="resourceScrapPolymers" count="12"/> <!-- 2x default value -->
+		</recipe>
+		
+		<recipe name="FeelBatteryboxSmallBlockVariantHelper" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="11"/>
+			<ingredient name="resourceScrapPolymers" count="6"/>
+		</recipe>
+	</append>
+</configs>

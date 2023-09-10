@@ -1,0 +1,4 @@
+<configs>
+    <set xpath="/items/item[@name='questRewardBatteryBankBundle']/property[@class='Action0']/property[@name='Create_item']/@value">batterybank,carBattery,carBattery,switch,electricwirerelay,generatorbank,pressureplate,ceilingLight01_player,meleeToolWireTool,electricianSkillMagazine,FeelBatterybankBlockVariantHelper,FeelBatteryboxLargeBlockVariantHelper,FeelBatteryboxMediumBlockVariantHelper,FeelBatteryboxSmallBlockVariantHelper</set>
+    <set xpath="/items/item[@name='questRewardBatteryBankBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">0-1,2-6,2-6,2,10,1,5,10,1,3,0-1,0-1,0-1,0-1</set>
+</configs>

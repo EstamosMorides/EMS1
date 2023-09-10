@@ -1,0 +1,71 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="FeelWireRelay_pipeLargeBlockVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="16"/>
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="resourceScrapIron" count="12"/>
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+		<recipe name="FeelWireRelay_pipeSmallBlockVariantHelper" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="resourceScrapIron" count="6"/>
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		
+		<recipe name="FeelWireRelay_BlockVariantHelper_ElectricalBoxSmall" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="resourceScrapIron" count="6"/>
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		
+		<recipe name="FeelWireRelay_BlockVariantHelper_ElectricalBoxMedium" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="12"/>
+			<ingredient name="resourceElectricParts" count="9"/>
+			<ingredient name="resourceScrapIron" count="9"/>
+			<ingredient name="resourceWood" count="9"/>
+		</recipe>
+		
+		<recipe name="FeelWireRelay_BlockVariantHelper_ElectricalBoxLarge" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="18"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="resourceScrapIron" count="12"/>
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+		
+		<recipe name="FeelWireRelayOther_1" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="18"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="resourceScrapIron" count="12"/>
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+		<recipe name="FeelWireRelayOther_2" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="18"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="resourceScrapIron" count="12"/>
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+		<recipe name="FeelWireRelayOther_3" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="8"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="resourceScrapIron" count="6"/>
+			<ingredient name="resourceWood" count="6"/>
+		</recipe>
+		<recipe name="FeelWireRelayOther_4" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceScrapIron" count="2"/>
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+	</append>
+</configs>

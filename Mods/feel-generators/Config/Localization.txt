@@ -1,0 +1,5 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish,Dutch
+FeelGenerator_Yellow,blocks,Electricity,New,Generator Yellow,,,,,,Generator Yellow
+FeelGenerator_Red,blocks,Electricity,New,Generator Red,,,,,,Generator Red
+FeelGenerator_Red_2,blocks,Electricity,New,Generator Red 2,,,,,,Generator Red 2
+FeelGeneratorBlockVariantHelper,blocks,Electricity,New,Generator Variant Helper,,,,,,Generator Variant Helper

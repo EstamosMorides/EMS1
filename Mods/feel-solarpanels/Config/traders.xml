@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderElectrical']">
+		<item name="FeelSolarpanelSmallBlockVariantHelper" count="1" prob="0.3"/>
+		<item name="FeelSolarpanelMediumBlockVariantHelper" count="1" prob="0.3"/>
+		<item name="FeelSolarpanelLargeBlockVariantHelper" count="1" prob="0.3"/>
+		<item name="FeelSolarpanelPortableBlockVariantHelper" count="1" prob="0.3"/>
+	</append>
+</configs>

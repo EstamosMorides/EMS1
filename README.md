@@ -13,6 +13,11 @@
 * [Better Resource Harvest](#qol2)
 * [Boosted Supply Crates](#qol8)
 * [CTVI - Dew Collectors](#qol4)
+* [Feel - Better Stacks](#qol1)
+* [Feel - Battery Banks Extended](#feel1)
+* [Feel - Generators Extended](#feel2)
+* [Feel - Solar Panels Extended](#feel3)
+* [Feel - Wire Relays Extended](#feel4)
 * [Imagine: Better Food](#qol5)
 * [Oakraven - Bee Hives](#ocb)
 * [Oakraven - Chicken Coops](#occ)
@@ -23,6 +28,15 @@
 * [Shotgun Pack](#guns3)
 * [Working Ovens](#qol3)
 * [#EstamosMorides Mods](#em)
+
+### <a id="em"></a>#EstamosMorides Custom Mods/Settings
+
+* Increased Skill Points per Level to **3**
+* Increased Gore Animal Blocks (0.0012)
+* Can Pickup Spike & Barbed Traps
+* Firelog: New item to use as fuel aswell as wood. Included recipe to craft from backpack.
+* Bicycle & Parts in Dumpster for lower stages
+* Improve quantity and prob in BirdsNest. Also drop seeds
 
 ### UI
 #### <a id="ui1"></a>[Ramos XUI][ui]
@@ -130,16 +144,17 @@ Automatically stop burning fuel when production or melting is finished
 ![qol8img4]<br>
 An attempt at a boosted supply crate that isn't completely overpowered
 
-### <a id="em"></a>#EstamosMorides Custom Mods/Settings
+#### <a id="feel1"></a>[Feel - Battery Banks Extended][feel1]
+![feel1img]
 
-* Increased Skill Points per Level to **3**
-* Increased Gore Animal Blocks (0.0012)
-* Can Pickup Spike & Barbed Traps
-* Firelog: New item to use as fuel aswell as wood. Included recipe to craft from backpack.
-* Bicycle & Parts in Dumpster for lower stages
-* Improve quantity and prob in BirdsNest. Also drop seeds
+#### <a id="feel2"></a>[Feel - Generators Extended][feel2]
+![feel2img]
 
+#### <a id="feel3"></a>[Feel - Solar Panels Extended][feel3]
+![feel3img]
 
+#### <a id="feel4"></a>[Feel - Wire Relays Extended][feel4]
+![feel4img]
 
 ---
 
@@ -194,3 +209,12 @@ An attempt at a boosted supply crate that isn't completely overpowered
 [ocb]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-3.jpg>
 [occ]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-2.jpg>
 [ocd]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection.jpg>
+
+[feel1]: <https://www.nexusmods.com/7daystodie/mods/3123> "Feel - Battery Banks Extended"
+[feel1img]: <https://staticdelivery.nexusmods.com/mods/1059/images/3123/3123-1688224237-1685053567.png>
+[feel2]: <https://www.nexusmods.com/7daystodie/mods/3124> "Feel - Generators Extended"
+[feel2img]: https://staticdelivery.nexusmods.com/mods/1059/images/3124/3124-1688226152-1989704796.png
+[feel3]: <https://www.nexusmods.com/7daystodie/mods/956> "Feel - Solar Panels Extended"
+[feel3img]: <https://staticdelivery.nexusmods.com/mods/1059/images/956/956-1688228711-825113685.png>
+[feel4]: <https://www.nexusmods.com/7daystodie/mods/3126> "Feel - Wire Relays Extended"
+[feel4img]: <https://staticdelivery.nexusmods.com/mods/1059/images/3126/3126-1688229566-1806526418.png>

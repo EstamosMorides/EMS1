@@ -1,0 +1,1616 @@
+<configs>
+	<append xpath="/blocks">
+		<!-- *** LARGE_PIPES -->
+		<block name="FeelWireRelay_metalPipeStraight">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="CustomIcon" value="metalPipeStraight"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="pipe_straight"/>
+			<property name="Texture" value="597"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="4"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_metalPipeValve"> <!-- large -->
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="CustomIcon" value="metalPipeValve"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plumbing/pipe_valvePrefab"/>
+			<property name="ImposterExchange" value="imposterCTREighth" param1="144"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="4"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="EconomicValue" value="30"/> <!-- disassemble value -->
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0401"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_metalPipeCorner">
+			<property name="Extends" value="FeelWireRelay_metalPipeStraight"/>
+			<property name="CustomIcon" value="metalPipeCorner"/>
+			<property name="Model" value="pipe_corner"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0402"/>
+		</block>
+		<block name="FeelWireRelay_metalPipeJoint">
+			<property name="Extends" value="FeelWireRelay_metalPipeStraight"/>
+			<property name="CustomIcon" value="metalPipeJoint"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Model" value="pipe_joint"/>
+			<property name="ImposterExchange" value="FeelWireRelay_metalPipeStraight" param1="110"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+		<block name="FeelWireRelay_metalPipeCap">
+			<property name="Extends" value="FeelWireRelay_metalPipeStraight" param1="Path"/>
+			<property name="CustomIcon" value="metalPipeCap"/>
+			<property name="Model" value="pipe_cap"/>
+			<property name="Texture" value="598"/>
+			<property name="ImposterExchange" value="imposterCTREighth" param1="110"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0404"/>
+		</block>
+		<block name="FeelWireRelay_metalPipeFlange">
+			<property name="Extends" value="FeelWireRelay_metalPipeStraight"/>
+			<property name="CustomIcon" value="metalPipeFlange"/>
+			<property name="Model" value="pipe_flange"/>
+			<property name="ImposterExchange" value="FeelWireRelay_metalPipeStraight" param1="110"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0405"/>
+		</block>
+
+			<!-- *** SMALL_PIPES -->
+		<!-- Black -->
+		<block name="FeelWireRelay_pipeSmall1x1">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="CustomIcon" value="pipeSmall1x1"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="CustomIconTint" value="262728"/>
+			<property name="TintColor" value="262728"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder1" value="B651"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmall1x3">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmall1x3"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x3Prefab"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBroke">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallBroke"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCap">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallCap"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallJoint">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallValve"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve02">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallValve02"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCorner">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x1">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWall1x1"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x3">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWall1x3"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x3Prefab"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallBroke">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallBroke"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCap">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallCap"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallJoint">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallJoint"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallValve"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve02">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallValve02"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="0014"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCorner">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallCorner"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallOutsideCorner">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallOutsideCorner"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallOutsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallInsideCorner">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallInsideCorner"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallInsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="0015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCenterBridge">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1"/>
+			<property name="CustomIcon" value="pipeSmallWallCenterBridge"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCenterBridgePrefab"/>
+			<property name="SortOrder2" value="0016"/>
+		</block>
+
+		<!-- Red -->
+		<block name="FeelWireRelay_pipeSmall1x1Red">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="CustomIcon" value="pipeSmall1x1"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder1" value="B652"/>
+			<property name="SortOrder2" value="2000"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmall1x3Red">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmall1x3"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder2" value="2001"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBrokeRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallBroke"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2002"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCapRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallCap"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2003"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallJointRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2004"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValveRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallValve"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="2005"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve02Red">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallValve02"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="2006"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCornerRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2007"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x1Red">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWall1x1"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2008"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x3Red">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWall1x3"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2009"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallBrokeRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallBroke"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2010"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCapRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallCap"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2011"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallJointRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallJoint"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2012"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValveRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallValve"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="2013"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve02Red">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallValve02"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="2014"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCornerRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallCorner"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallOutsideCornerRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallOutsideCorner"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallOutsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="LODCullMin" value="0.001"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallInsideCornerRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallInsideCorner"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallInsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="2015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCenterBridgeRed">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Red"/>
+			<property name="CustomIcon" value="pipeSmallWallCenterBridge"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="8D2427"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCenterBridgePrefab"/>
+			<property name="SortOrder2" value="2016"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="FeelWireRelay_pipeSmall1x1Yellow">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="CustomIcon" value="pipeSmall1x1"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder1" value="B654"/>
+			<property name="SortOrder2" value="4000"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmall1x3Yellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmall1x3"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder2" value="4001"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBrokeYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallBroke"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4002"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCapYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallCap"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4003"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallJointYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4004"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValveYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallValve"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="4005"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve02Yellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallValve02"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValve02Prefab"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="4006"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCornerYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4007"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x1Yellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWall1x1"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4008"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x3Yellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWall1x3"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4009"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallBrokeYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallBroke"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4010"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCapYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallCap"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4011"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallJointYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallJoint"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4012"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValveYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallValve"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="4013"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve02Yellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallValve02"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="4014"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCornerYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallCorner"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallOutsideCornerYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallOutsideCorner"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallOutsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="LODCullMin" value="0.001"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallInsideCornerYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallInsideCorner"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallInsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="4015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCenterBridgeYellow">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Yellow"/>
+			<property name="CustomIcon" value="pipeSmallWallCenterBridge"/>
+			<property name="CustomIconTint" value="AC9760"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="AC9760"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCenterBridgePrefab"/>
+			<property name="SortOrder2" value="4016"/>
+		</block>
+
+		<!-- Green -->
+		<block name="FeelWireRelay_pipeSmall1x1Green">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="CustomIcon" value="pipeSmall1x1"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder1" value="B655"/>
+			<property name="SortOrder2" value="5000"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmall1x3Green">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmall1x3"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder2" value="5001"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBrokeGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallBroke"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5002"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCapGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallCap"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5003"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallJointGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5004"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValveGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallValve"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="5005"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve02Green">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallValve02"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="5006"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCornerGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5007"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x1Green">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWall1x1"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5008"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x3Green">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWall1x3"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5009"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallBrokeGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallBroke"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5010"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCapGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallCap"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5011"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallJointGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallJoint"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5012"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValveGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallValve"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="5013"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve02Green">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallValve02"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="5014"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCornerGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallCorner"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallOutsideCornerGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallOutsideCorner"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallOutsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="LODCullMin" value="0.001"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallInsideCornerGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallInsideCorner"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallInsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="5015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCenterBridgeGreen">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Green"/>
+			<property name="CustomIcon" value="pipeSmallWallCenterBridge"/>
+			<property name="CustomIconTint" value="5E825D"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="5E825D"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCenterBridgePrefab"/>
+			<property name="SortOrder2" value="5016"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="FeelWireRelay_pipeSmall1x1Blue">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="CustomIcon" value="pipeSmall1x1"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder1" value="B656"/>
+			<property name="SortOrder2" value="6000"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmall1x3Blue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmall1x3"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder2" value="6001"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBrokeBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallBroke"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6002"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCapBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallCap"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCapPrefab"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6003"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallJointBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6004"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValveBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallValve"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="6005"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve02Blue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallValve02"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="6006"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCornerBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6007"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x1Blue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWall1x1"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6008"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x3Blue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWall1x3"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6009"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallBrokeBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallBroke"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6010"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCapBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallCap"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6011"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallJointBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallJoint"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6012"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValveBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallValve"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="6013"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve02Blue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallValve02"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="6014"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCornerBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallCorner"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallOutsideCornerBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallOutsideCorner"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallOutsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="LODCullMin" value="0.001"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallInsideCornerBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallInsideCorner"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallInsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="6015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCenterBridgeBlue">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Blue"/>
+			<property name="CustomIcon" value="pipeSmallWallCenterBridge"/>
+			<property name="CustomIconTint" value="486A9A"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="486A9A"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCenterBridgePrefab"/>
+			<property name="SortOrder2" value="6016"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="FeelWireRelay_pipeSmall1x1Grey">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="CustomIcon" value="pipeSmall1x1"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder1" value="B658"/>
+			<property name="SortOrder2" value="8000"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmall1x3Grey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmall1x3"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder2" value="8001"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBrokeGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallBroke"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8002"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCapGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallCap"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8003"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallJointGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8004"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValveGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallValve"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="8005"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallValve02Grey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallValve02"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.5" tag="salvageHarvest"/>
+			<property name="SortOrder2" value="8006"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallCornerGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8007"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x1Grey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWall1x1"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x1Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8008"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWall1x3Grey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWall1x3"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWall_1x3Prefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8009"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallBrokeGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallBroke"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallBrokePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8010"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCapGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallCap"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCapPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8011"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallJointGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallJoint"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallJointPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8012"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValveGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallValve"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValvePrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="8013"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallValve02Grey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallValve02"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallValve02Prefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="12,25" tag="salvageHarvest" tool_category="Disassemble"/>
+			<property name="SortOrder2" value="8014"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCornerGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallCorner"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCornerPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallOutsideCornerGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallOutsideCorner"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallOutsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallInsideCornerGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallInsideCorner"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallInsideCornerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SortOrder2" value="8015"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallWallCenterBridgeGrey">
+			<property name="Extends" value="FeelWireRelay_pipeSmall1x1Grey"/>
+			<property name="CustomIcon" value="pipeSmallWallCenterBridge"/>
+			<property name="CustomIconTint" value="6F6F6F"/>
+			<property name="ItemTypeIcon" value="brick"/>
+			<property name="TintColor" value="6F6F6F"/>
+			<property name="Model" value="Entities/Industrial/pipeSmallWallCenterBridgePrefab"/>
+			<property name="SortOrder2" value="8016"/>
+		</block>
+		
+		<!-- *** PLAYER_VARIANT_HELPER_BLOCKS -->
+		<block name="FeelWireRelay_pipeLargeBlockVariantHelper">
+			<property name="Extends" value="FeelWireRelay_metalPipeJoint"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="metalPipeJoint"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelWireRelay_metalPipeJoint,FeelWireRelay_metalPipeStraight,FeelWireRelay_metalPipeCorner,FeelWireRelay_metalPipeFlange,FeelWireRelay_metalPipeCap,FeelWireRelay_metalPipeValve"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		<block name="FeelWireRelay_pipeSmallBlockVariantHelper">
+			<property name="Extends" value="FeelWireRelay_pipeSmallJoint"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="pipeSmallJoint"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelWireRelay_pipeSmall1x1,FeelWireRelay_pipeSmall1x3,FeelWireRelay_pipeSmallBroke,FeelWireRelay_pipeSmallCap,FeelWireRelay_pipeSmallJoint,FeelWireRelay_pipeSmallValve,FeelWireRelay_pipeSmallValve02,FeelWireRelay_pipeSmallCorner,FeelWireRelay_pipeSmallWall1x1,FeelWireRelay_pipeSmallWall1x3,FeelWireRelay_pipeSmallWallBroke,FeelWireRelay_pipeSmallWallCap,FeelWireRelay_pipeSmallWallJoint,FeelWireRelay_pipeSmallWallValve,FeelWireRelay_pipeSmallWallValve02,FeelWireRelay_pipeSmallWallCorner,FeelWireRelay_pipeSmallWallOutsideCorner,FeelWireRelay_pipeSmallWallInsideCorner,FeelWireRelay_pipeSmallWallCenterBridge,FeelWireRelay_pipeSmall1x1Red,FeelWireRelay_pipeSmall1x3Red,FeelWireRelay_pipeSmallBrokeRed,FeelWireRelay_pipeSmallCapRed,FeelWireRelay_pipeSmallJointRed,FeelWireRelay_pipeSmallValveRed,FeelWireRelay_pipeSmallValve02Red,FeelWireRelay_pipeSmallCornerRed,FeelWireRelay_pipeSmallWall1x1Red,FeelWireRelay_pipeSmallWall1x3Red,FeelWireRelay_pipeSmallWallBrokeRed,FeelWireRelay_pipeSmallWallCapRed,FeelWireRelay_pipeSmallWallJointRed,FeelWireRelay_pipeSmallWallValveRed,FeelWireRelay_pipeSmallWallValve02Red,FeelWireRelay_pipeSmallWallCornerRed,FeelWireRelay_pipeSmallWallOutsideCornerRed,FeelWireRelay_pipeSmallWallInsideCornerRed,FeelWireRelay_pipeSmallWallCenterBridgeRed,FeelWireRelay_pipeSmall1x1Yellow,FeelWireRelay_pipeSmall1x3Yellow,FeelWireRelay_pipeSmallBrokeYellow,FeelWireRelay_pipeSmallCapYellow,FeelWireRelay_pipeSmallJointYellow,FeelWireRelay_pipeSmallValveYellow,FeelWireRelay_pipeSmallValve02Yellow,FeelWireRelay_pipeSmallCornerYellow,FeelWireRelay_pipeSmallWall1x1Yellow,FeelWireRelay_pipeSmallWall1x3Yellow,FeelWireRelay_pipeSmallWallBrokeYellow,FeelWireRelay_pipeSmallWallCapYellow,FeelWireRelay_pipeSmallWallJointYellow,FeelWireRelay_pipeSmallWallValveYellow,FeelWireRelay_pipeSmallWallValve02Yellow,FeelWireRelay_pipeSmallWallCornerYellow,FeelWireRelay_pipeSmallWallOutsideCornerYellow,FeelWireRelay_pipeSmallWallInsideCornerYellow,FeelWireRelay_pipeSmallWallCenterBridgeYellow,FeelWireRelay_pipeSmall1x1Green,FeelWireRelay_pipeSmall1x3Green,FeelWireRelay_pipeSmallBrokeGreen,FeelWireRelay_pipeSmallCapGreen,FeelWireRelay_pipeSmallJointGreen,FeelWireRelay_pipeSmallValveGreen,FeelWireRelay_pipeSmallValve02Green,FeelWireRelay_pipeSmallCornerGreen,FeelWireRelay_pipeSmallWall1x1Green,FeelWireRelay_pipeSmallWall1x3Green,FeelWireRelay_pipeSmallWallBrokeGreen,FeelWireRelay_pipeSmallWallCapGreen,FeelWireRelay_pipeSmallWallJointGreen,FeelWireRelay_pipeSmallWallValveGreen,FeelWireRelay_pipeSmallWallValve02Green,FeelWireRelay_pipeSmallWallCornerGreen,FeelWireRelay_pipeSmallWallOutsideCornerGreen,FeelWireRelay_pipeSmallWallInsideCornerGreen,FeelWireRelay_pipeSmallWallCenterBridgeGreen,FeelWireRelay_pipeSmall1x1Blue,FeelWireRelay_pipeSmall1x3Blue,FeelWireRelay_pipeSmallBrokeBlue,FeelWireRelay_pipeSmallCapBlue,FeelWireRelay_pipeSmallJointBlue,FeelWireRelay_pipeSmallValveBlue,FeelWireRelay_pipeSmallValve02Blue,FeelWireRelay_pipeSmallCornerBlue,FeelWireRelay_pipeSmallWall1x1Blue,FeelWireRelay_pipeSmallWall1x3Blue,FeelWireRelay_pipeSmallWallBrokeBlue,FeelWireRelay_pipeSmallWallCapBlue,FeelWireRelay_pipeSmallWallJointBlue,FeelWireRelay_pipeSmallWallValveBlue,FeelWireRelay_pipeSmallWallValve02Blue,FeelWireRelay_pipeSmallWallCornerBlue,FeelWireRelay_pipeSmallWallOutsideCornerBlue,FeelWireRelay_pipeSmallWallInsideCornerBlue,FeelWireRelay_pipeSmallWallCenterBridgeBlue,FeelWireRelay_pipeSmall1x1Grey,FeelWireRelay_pipeSmall1x3Grey,FeelWireRelay_pipeSmallBrokeGrey,FeelWireRelay_pipeSmallCapGrey,FeelWireRelay_pipeSmallJointGrey,FeelWireRelay_pipeSmallValveGrey,FeelWireRelay_pipeSmallValve02Grey,FeelWireRelay_pipeSmallCornerGrey,FeelWireRelay_pipeSmallWall1x1Grey,FeelWireRelay_pipeSmallWall1x3Grey,FeelWireRelay_pipeSmallWallBrokeGrey,FeelWireRelay_pipeSmallWallCapGrey,FeelWireRelay_pipeSmallWallJointGrey,FeelWireRelay_pipeSmallWallValveGrey,FeelWireRelay_pipeSmallWallValve02Grey,FeelWireRelay_pipeSmallWallCornerGrey,FeelWireRelay_pipeSmallWallOutsideCornerGrey,FeelWireRelay_pipeSmallWallInsideCornerGrey,FeelWireRelay_pipeSmallWallCenterBridgeGrey"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- *** ADDED MODELS -->
+		<block name="FeelWireRelay_ElectricalBoxSmall_1">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox1Prefab" />
+			<property name="CustomIcon" value="ElectricBox1Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxSmall_2">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox2Prefab" />
+			<property name="CustomIcon" value="ElectricBox2Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxSmall_3">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox3Prefab" />
+			<property name="CustomIcon" value="ElectricBox3Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxSmall_4">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox4Prefab" />
+			<property name="CustomIcon" value="ElectricBox4Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxSmall_5">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox5Prefab" />
+			<property name="CustomIcon" value="ElectricBox5Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxSmall_6">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox6Prefab" />
+			<property name="CustomIcon" value="ElectricBox6Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_BlockVariantHelper_ElectricalBoxSmall">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox1Prefab" />
+			<property name="CustomIcon" value="ElectricBox1Prefab" />
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelWireRelay_ElectricalBoxSmall_1,FeelWireRelay_ElectricalBoxSmall_2,FeelWireRelay_ElectricalBoxSmall_3,FeelWireRelay_ElectricalBoxSmall_4,FeelWireRelay_ElectricalBoxSmall_5,FeelWireRelay_ElectricalBoxSmall_6"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+			<property name="FilterTags" value="fbuilding,fdecor,fother,felectrical"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		
+		<block name="FeelWireRelay_ElectricalBoxMedium_1">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox7Prefab" />
+			<property name="CustomIcon" value="ElectricBox7Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxMedium_2">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox8Prefab" />
+			<property name="CustomIcon" value="ElectricBox8Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxMedium_3">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox9Prefab" />
+			<property name="CustomIcon" value="ElectricBox9Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxMedium_4">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox10Prefab" />
+			<property name="CustomIcon" value="ElectricBox10Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxMedium_5">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox11Prefab" />
+			<property name="CustomIcon" value="ElectricBox11Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxMedium_6">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox12Prefab" />
+			<property name="CustomIcon" value="ElectricBox12Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_BlockVariantHelper_ElectricalBoxMedium">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox7Prefab" />
+			<property name="CustomIcon" value="ElectricBox7Prefab" />
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelWireRelay_ElectricalBoxMedium_1,FeelWireRelay_ElectricalBoxMedium_2,FeelWireRelay_ElectricalBoxMedium_3,FeelWireRelay_ElectricalBoxMedium_4,FeelWireRelay_ElectricalBoxMedium_5,FeelWireRelay_ElectricalBoxMedium_6"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+			<property name="FilterTags" value="fbuilding,fdecor,fother,felectrical"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		
+		<block name="FeelWireRelay_ElectricalBoxLarge_1">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox13Prefab" />
+			<property name="CustomIcon" value="ElectricBox13Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxLarge_2">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox14Prefab" />
+			<property name="CustomIcon" value="ElectricBox14Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxLarge_3">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox15Prefab" />
+			<property name="CustomIcon" value="ElectricBox15Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxLarge_4">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox16Prefab" />
+			<property name="CustomIcon" value="ElectricBox16Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxLarge_5">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox17Prefab" />
+			<property name="CustomIcon" value="ElectricBox17Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_ElectricalBoxLarge_6">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox18Prefab" />
+			<property name="CustomIcon" value="ElectricBox18Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelay_BlockVariantHelper_ElectricalBoxLarge">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?ElectricBox13Prefab" />
+			<property name="CustomIcon" value="ElectricBox13Prefab" />
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelWireRelay_ElectricalBoxLarge_1,FeelWireRelay_ElectricalBoxLarge_2,FeelWireRelay_ElectricalBoxLarge_3,FeelWireRelay_ElectricalBoxLarge_4,FeelWireRelay_ElectricalBoxLarge_5,FeelWireRelay_ElectricalBoxLarge_6"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+			<property name="FilterTags" value="fbuilding,fdecor,fother,felectrical"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		
+		<block name="FeelWireRelayOther_1">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?SwitchBoard1Prefab" />
+			<property name="CustomIcon" value="SwitchBoard1Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelayOther_2">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?SwitchBoard2Prefab" />
+			<property name="CustomIcon" value="SwitchBoard2Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelayOther_3">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?SwitchBoard3Prefab" />
+			<property name="CustomIcon" value="SwitchBoard3Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+		<block name="FeelWireRelayOther_4">
+			<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
+			<property name="Class" value="ElectricWire"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/WireRelays.unity3d?SwitchBoard4Prefab" />
+			<property name="CustomIcon" value="SwitchBoard4Prefab" />
+			<property name="EconomicValue" value="50"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="RequiredPower" value="1"/>
+		</block>
+	</append>
+</configs>

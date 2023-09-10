@@ -1,0 +1,39 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="FeelGenerator_Yellow">
+			<property name="Extends" value="generatorbank"/>
+			<property name="Model" value="#@modfolder:Resources/Generators.unity3d?GenoratorYellowPrefab"/>
+			<property name="CustomIcon" value="GenoratorYellowPrefab"/>
+			<property name="MaxFuel" value="4000"/>
+			<property name="MaxPower" value="49000"/>
+			<property name="OutputPerFuel" value="45000"/>
+			<property name="OutputPerStack" value="400"/>
+		</block>
+		<block name="FeelGenerator_Red">
+			<property name="Extends" value="generatorbank"/>
+			<property name="Model" value="#@modfolder:Resources/Generators.unity3d?GenoratorRedPrefab"/>
+			<property name="CustomIcon" value="GenoratorRedPrefab"/>
+			<property name="MaxFuel" value="4000"/>
+			<property name="MaxPower" value="49000"/>
+			<property name="OutputPerFuel" value="45000"/>
+			<property name="OutputPerStack" value="400"/>
+		</block>
+		<block name="FeelGenerator_Red_2">
+			<property name="Extends" value="generatorbank"/>
+			<property name="Model" value="#@modfolder:Resources/Generators.unity3d?GeneratorRed2Prefab"/>
+			<property name="CustomIcon" value="GeneratorRed2Prefab"/>
+			<property name="MaxFuel" value="4000"/>
+			<property name="MaxPower" value="49000"/>
+			<property name="OutputPerFuel" value="45000"/>
+			<property name="OutputPerStack" value="400"/>
+		</block>
+		<block name="FeelGeneratorBlockVariantHelper">
+			<property name="Extends" value="FeelGenerator_Yellow"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelGenerator_Yellow,FeelGenerator_Red,FeelGenerator_Red_2"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+	</append>
+</configs>

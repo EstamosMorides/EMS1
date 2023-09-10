@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT4']">
+		<unlock_entry item="FeelSolarpanelSmallBlockVariantHelper,FeelSolarpanelMediumBlockVariantHelper,FeelSolarpanelLargeBlockVariantHelper,,FeelSolarpanelPortableBlockVariantHelper,solarCell,solarbank,FeelSolarpanel_1,FeelSolarpanel_2,FeelSolarpanel_15,FeelSolarpanel_16,FeelSolarpanel_17" unlock_tier="1" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="FeelSolarpanelSmallBlockVariantHelper,FeelSolarpanelMediumBlockVariantHelper,FeelSolarpanelLargeBlockVariantHelper,,FeelSolarpanelPortableBlockVariantHelper,solarCell,solarbank,FeelSolarpanel_1,FeelSolarpanel_2,FeelSolarpanel_15,FeelSolarpanel_16,FeelSolarpanel_17"/>
+	</append>
+</configs>

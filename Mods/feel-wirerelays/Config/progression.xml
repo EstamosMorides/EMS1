@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT1']">
+		<unlock_entry item="FeelWireRelay_pipeLargeBlockVariantHelper,FeelWireRelay_pipeSmallBlockVariantHelper,FeelWireRelay_BlockVariantHelper_ElectricalBoxSmall,FeelWireRelay_BlockVariantHelper_ElectricalBoxMedium,FeelWireRelay_BlockVariantHelper_ElectricalBoxLarge,FeelWireRelayOther_1,FeelWireRelayOther_2,FeelWireRelayOther_3,FeelWireRelayOther_4" unlock_tier="1" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="FeelWireRelay_pipeLargeBlockVariantHelper,FeelWireRelay_pipeSmallBlockVariantHelper,FeelWireRelay_BlockVariantHelper_ElectricalBoxSmall,FeelWireRelay_BlockVariantHelper_ElectricalBoxMedium,FeelWireRelay_BlockVariantHelper_ElectricalBoxLarge,FeelWireRelayOther_1,FeelWireRelayOther_2,FeelWireRelayOther_3,FeelWireRelayOther_4"/>
+	</append>
+</configs>

@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderElectrical']">
+		<item name="FeelGeneratorBlockVariantHelper" count="1" prob="0.3"/>
+	</append>
+</configs>

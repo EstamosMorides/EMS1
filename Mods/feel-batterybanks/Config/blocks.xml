@@ -1,0 +1,150 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="FeelBatterybank_1">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBank1Prefab" />
+			<property name="CustomIcon" value="BatteryBank1Prefab" />
+			<property name="EconomicValue" value="1600"/> <!-- 4x default value -->
+			<property name="MaxPower" value="1600"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="360"/> <!-- 4x default value -->
+			<property name="OutputPerCharge" value="200"/> <!-- 4x default value -->
+			<property name="StabilitySupport" value="true"/>
+			<property name="CanPickup" value="true" param1="FeelBatterybankBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybank_2">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBank2Prefab" />
+			<property name="CustomIcon" value="BatteryBank2Prefab" />
+			<property name="EconomicValue" value="1600"/> <!-- 4x default value -->
+			<property name="MaxPower" value="1600"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="360"/> <!-- 4x default value -->
+			<property name="OutputPerCharge" value="200"/> <!-- 4x default value -->
+			<property name="StabilitySupport" value="true"/>
+			<property name="CanPickup" value="true" param1="FeelBatterybankBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybank_3">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBank3Prefab" />
+			<property name="CustomIcon" value="BatteryBank3Prefab" />
+			<property name="EconomicValue" value="1600"/> <!-- 4x default value -->
+			<property name="MaxPower" value="1600"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="360"/> <!-- 4x default value -->
+			<property name="OutputPerCharge" value="200"/> <!-- 4x default value -->
+			<property name="StabilitySupport" value="true"/>
+			<property name="CanPickup" value="true" param1="FeelBatterybankBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybankBlockVariantHelper">
+			<property name="Extends" value="FeelBatterybank_1"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelBatterybank_1,FeelBatterybank_2,FeelBatterybank_3"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelBatterybox_1">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox1Prefab" />
+			<property name="CustomIcon" value="BatteryBox1Prefab" />
+			<property name="EconomicValue" value="1200"/> <!-- 3x default value -->
+			<property name="MaxPower" value="1200"/> <!-- 3x default value -->
+			<property name="OutputPerStack" value="270"/> <!-- 3x default value -->
+			<property name="OutputPerCharge" value="150"/> <!-- 3x default value -->
+			<property name="CanPickup" value="true" param1="FeelBatteryboxLargeBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybox_2">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox2Prefab" />
+			<property name="CustomIcon" value="BatteryBox2Prefab" />
+			<property name="EconomicValue" value="1200"/> <!-- 3x default value -->
+			<property name="MaxPower" value="1200"/> <!-- 3x default value -->
+			<property name="OutputPerStack" value="270"/> <!-- 3x default value -->
+			<property name="OutputPerCharge" value="150"/> <!-- 3x default value -->
+			<property name="CanPickup" value="true" param1="FeelBatteryboxLargeBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybox_3">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox3Prefab" />
+			<property name="CustomIcon" value="BatteryBox3Prefab" />
+			<property name="EconomicValue" value="1200"/> <!-- 3x default value -->
+			<property name="MaxPower" value="1200"/> <!-- 3x default value -->
+			<property name="OutputPerStack" value="270"/> <!-- 3x default value -->
+			<property name="OutputPerCharge" value="150"/> <!-- 3x default value -->
+			<property name="CanPickup" value="true" param1="FeelBatteryboxLargeBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatteryboxLargeBlockVariantHelper">
+			<property name="Extends" value="FeelBatterybox_1"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelBatterybox_1,FeelBatterybox_2,FeelBatterybox_3"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelBatterybox_4">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox4Prefab" />
+			<property name="CustomIcon" value="BatteryBox4Prefab" />
+			<property name="EconomicValue" value="800"/> <!-- 2x default value -->
+			<property name="MaxPower" value="800"/> <!-- 2x default value -->
+			<property name="OutputPerStack" value="180"/> <!-- 2x default value -->
+			<property name="OutputPerCharge" value="100"/> <!-- 2x default value -->
+			<property name="CanPickup" value="true" param1="FeelBatteryboxMediumBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybox_5">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox5Prefab" />
+			<property name="CustomIcon" value="BatteryBox5Prefab" />
+			<property name="EconomicValue" value="800"/> <!-- 2x default value -->
+			<property name="MaxPower" value="800"/> <!-- 2x default value -->
+			<property name="OutputPerStack" value="180"/> <!-- 2x default value -->
+			<property name="OutputPerCharge" value="100"/> <!-- 2x default value -->
+			<property name="CanPickup" value="true" param1="FeelBatteryboxMediumBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybox_6">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox6Prefab" />
+			<property name="CustomIcon" value="BatteryBox6Prefab" />
+			<property name="EconomicValue" value="800"/> <!-- 2x default value -->
+			<property name="MaxPower" value="800"/> <!-- 2x default value -->
+			<property name="OutputPerStack" value="180"/> <!-- 2x default value -->
+			<property name="OutputPerCharge" value="100"/> <!-- 2x default value -->
+			<property name="CanPickup" value="true" param1="FeelBatteryboxMediumBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatteryboxMediumBlockVariantHelper">
+			<property name="Extends" value="FeelBatterybox_4"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelBatterybox_4,FeelBatterybox_5,FeelBatterybox_6"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelBatterybox_7">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox7Prefab" />
+			<property name="CustomIcon" value="BatteryBox7Prefab" />
+			<property name="CanPickup" value="true" param1="FeelBatteryboxSmallBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybox_8">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox8Prefab" />
+			<property name="CustomIcon" value="BatteryBox8Prefab" />
+			<property name="CanPickup" value="true" param1="FeelBatteryboxSmallBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatterybox_9">
+			<property name="Extends" value="batterybank"/>
+			<property name="Model" value="#@modfolder:Resources/BatteryBanks.unity3d?BatteryBox9Prefab" />
+			<property name="CustomIcon" value="BatteryBox9Prefab" />
+			<property name="CanPickup" value="true" param1="FeelBatteryboxSmallBlockVariantHelper"/>
+		</block>
+		<block name="FeelBatteryboxSmallBlockVariantHelper">
+			<property name="Extends" value="FeelBatterybox_7"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelBatterybox_7,FeelBatterybox_8,FeelBatterybox_9"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+	</append>
+</configs>

@@ -1,0 +1,76 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="solarCell" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceSilverNugget" count="5"/>
+			<ingredient name="resourceAcid" count="25"/>
+		</recipe>
+		<recipe name="solarbank" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="20"/> <!-- default value -->
+			<ingredient name="resourceMechanicalParts" count="20"/> <!-- default value -->
+			<ingredient name="resourceElectricParts" count="30"/> <!-- default value -->
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceMechanicalParts,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="FeelSolarpanel_1" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceMechanicalParts" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceElectricParts" count="120"/> <!-- 4x default value -->
+		</recipe>
+		<recipe name="FeelSolarpanel_2" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceMechanicalParts" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceElectricParts" count="120"/> <!-- 4x default value -->
+		</recipe>
+		
+		<recipe name="FeelSolarpanelLargeBlockVariantHelper" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="60"/> <!-- 3x default value -->
+			<ingredient name="resourceMechanicalParts" count="60"/> <!-- 3x default value -->
+			<ingredient name="resourceElectricParts" count="90"/> <!-- 3x default value -->
+			<ingredient name="resourceScrapPolymers" count="30"/>
+		</recipe>
+		
+		<recipe name="FeelSolarpanelMediumBlockVariantHelper" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="40"/> <!-- 2x default value -->
+			<ingredient name="resourceMechanicalParts" count="40"/> <!-- 2x default value -->
+			<ingredient name="resourceElectricParts" count="60"/> <!-- 2x default value -->
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>
+		
+		<recipe name="FeelSolarpanelSmallBlockVariantHelper" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="20"/> <!-- default value -->
+			<ingredient name="resourceMechanicalParts" count="20"/> <!-- default value -->
+			<ingredient name="resourceElectricParts" count="30"/> <!-- default value -->
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		
+		<recipe name="FeelSolarpanelPortableBlockVariantHelper" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceMechanicalParts" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceElectricParts" count="120"/> <!-- 4x default value -->
+			<ingredient name="vehicleWheels" count="2"/>
+		</recipe>
+		
+		<recipe name="FeelSolarpanel_15" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceMechanicalParts" count="80"/> <!-- 4x default value -->
+			<ingredient name="resourceElectricParts" count="120"/> <!-- 4x default value -->
+			<ingredient name="vehicleWheels" count="2"/>
+		</recipe>
+		<recipe name="FeelSolarpanel_16" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="80"/> <!-- 6x default value -->
+			<ingredient name="resourceMechanicalParts" count="80"/> <!-- 6x default value -->
+			<ingredient name="resourceElectricParts" count="120"/> <!-- 6x default value -->
+			<ingredient name="vehicleWheels" count="2"/>
+		</recipe>
+		<recipe name="FeelSolarpanel_17" count="1" time="60" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<ingredient name="resourceForgedIron" count="120"/> <!-- 6x default value -->
+			<ingredient name="resourceMechanicalParts" count="120"/> <!-- 6x default value -->
+			<ingredient name="resourceElectricParts" count="180"/> <!-- 6x default value -->
+			<ingredient name="vehicleWheels" count="2"/>
+		</recipe>
+	</append>
+</configs>

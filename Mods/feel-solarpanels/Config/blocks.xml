@@ -1,0 +1,198 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="FeelSolarpanel_1">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="720"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="120"/> <!-- 4x default value -->
+			<property name="EconomicValue" value="8000"/> <!-- 4x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?panel_01Prefab"/>
+			<property name="CustomIcon" value="panel_01Icon" />
+		</block>
+		<block name="FeelSolarpanel_2">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="720"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="120"/> <!-- 4x default value -->
+			<property name="EconomicValue" value="8000"/> <!-- 4x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?panel_02Prefab" />
+			<property name="CustomIcon" value="panel_02Icon" />
+		</block>
+		
+		<block name="FeelSolarpanel_3">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="540"/> <!-- 3x default value -->
+			<property name="OutputPerStack" value="90"/> <!-- 3x default value -->
+			<property name="EconomicValue" value="6000"/> <!-- 3x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_1_APrefab" />
+			<property name="CustomIcon" value="SolarGenerator_1_APrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_4">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="540"/> <!-- 3x default value -->
+			<property name="OutputPerStack" value="90"/> <!-- 3x default value -->
+			<property name="EconomicValue" value="6000"/> <!-- 3x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_1_BPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_1_BPrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_5">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="540"/> <!-- 3x default value -->
+			<property name="OutputPerStack" value="90"/> <!-- 3x default value -->
+			<property name="EconomicValue" value="6000"/> <!-- 3x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_1_CPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_1_CPrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanelLargeBlockVariantHelper">
+			<property name="Extends" value="FeelSolarpanel_3"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelSolarpanel_3,FeelSolarpanel_4,FeelSolarpanel_5"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelSolarpanel_6">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="360"/> <!-- 2x default value -->
+			<property name="OutputPerStack" value="60"/> <!-- 2x default value -->
+			<property name="EconomicValue" value="4000"/> <!-- 2x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_2_APrefab" />
+			<property name="CustomIcon" value="SolarGenerator_2_APrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_7">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="360"/> <!-- 2x default value -->
+			<property name="OutputPerStack" value="60"/> <!-- 2x default value -->
+			<property name="EconomicValue" value="4000"/> <!-- 2x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_2_BPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_2_BPrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_8">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="360"/> <!-- 2x default value -->
+			<property name="OutputPerStack" value="60"/> <!-- 2x default value -->
+			<property name="EconomicValue" value="4000"/> <!-- 2x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_2_CPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_2_CPrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanelMediumBlockVariantHelper">
+			<property name="Extends" value="FeelSolarpanel_6"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelSolarpanel_6,FeelSolarpanel_7,FeelSolarpanel_8"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelSolarpanel_9">
+			<property name="Extends" value="solarbank"/>
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_3_APrefab" />
+			<property name="CustomIcon" value="SolarGenerator_3_APrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_10">
+			<property name="Extends" value="solarbank"/>
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_3_BPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_3_BPrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_11">
+			<property name="Extends" value="solarbank"/>
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_3_CPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_3_CPrefab" />
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanelSmallBlockVariantHelper">
+			<property name="Extends" value="FeelSolarpanel_6"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelSolarpanel_6,FeelSolarpanel_7,FeelSolarpanel_8"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelSolarpanel_12">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="720"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="120"/> <!-- 4x default value -->
+			<property name="EconomicValue" value="8000"/> <!-- 4x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_4_APrefab" />
+			<property name="CustomIcon" value="SolarGenerator_4_APrefab" />
+			<property name="MultiBlockDim" value="3,2,2"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_13">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="720"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="120"/> <!-- 4x default value -->
+			<property name="EconomicValue" value="8000"/> <!-- 4x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_4_BPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_4_BPrefab" />
+			<property name="MultiBlockDim" value="3,2,2"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_14">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="720"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="120"/> <!-- 4x default value -->
+			<property name="EconomicValue" value="8000"/> <!-- 4x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_4_CPrefab" />
+			<property name="CustomIcon" value="SolarGenerator_4_CPrefab" />
+			<property name="MultiBlockDim" value="3,2,2"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanelPortableBlockVariantHelper">
+			<property name="Extends" value="FeelSolarpanel_12"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="FeelSolarpanel_12,FeelSolarpanel_13,FeelSolarpanel_14"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<block name="FeelSolarpanel_15">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="720"/> <!-- 4x default value -->
+			<property name="OutputPerStack" value="120"/> <!-- 4x default value -->
+			<property name="EconomicValue" value="8000"/> <!-- 4x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_5_Combine1Prefab" />
+			<property name="CustomIcon" value="SolarGenerator_5_Combine1Prefab" />
+			<property name="MultiBlockDim" value="3,3,5"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_16">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="1080"/> <!-- 6x default value -->
+			<property name="OutputPerStack" value="180"/> <!-- 6x default value -->
+			<property name="EconomicValue" value="12000"/> <!-- 6x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_5_Combine2Prefab" />
+			<property name="CustomIcon" value="SolarGenerator_5_Combine2Prefab" />
+			<property name="MultiBlockDim" value="3,4,5"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+		<block name="FeelSolarpanel_17">
+			<property name="Extends" value="solarbank"/>
+			<property name="MaxPower" value="1080"/> <!-- 6x default value -->
+			<property name="OutputPerStack" value="180"/> <!-- 6x default value -->
+			<property name="EconomicValue" value="12000"/> <!-- 6x default value -->
+			<property name="Model" value="#@modfolder:Resources/Solarpanels.unity3d?SolarGenerator_5_Combine3Prefab" />
+			<property name="CustomIcon" value="SolarGenerator_5_Combine3Prefab" />
+			<property name="MultiBlockDim" value="3,3,5"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+	</append>
+</configs>

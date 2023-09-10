@@ -1,0 +1,23 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish,Dutch
+FeelSolarpanel_1,blocks,Electricity,New,Solarpanel Standing 1,,,,,,Zonnepaneel 1
+FeelSolarpanel_2,blocks,Electricity,New,Solarpanel Standing 2,,,,,,Zonnepaneel 2
+FeelSolarpanel_3,blocks,Electricity,New,Solarpanel 3,,,,,,Zonnepaneel 3
+FeelSolarpanel_4,blocks,Electricity,New,Solarpanel 4,,,,,,Zonnepaneel 4
+FeelSolarpanel_5,blocks,Electricity,New,Solarpanel 5,,,,,,Zonnepaneel 5
+FeelSolarpanel_6,blocks,Electricity,New,Solarpanel 6,,,,,,Zonnepaneel 6
+FeelSolarpanel_7,blocks,Electricity,New,Solarpanel 7,,,,,,Zonnepaneel 7
+FeelSolarpanel_8,blocks,Electricity,New,Solarpanel 8,,,,,,Zonnepaneel 8
+FeelSolarpanel_9,blocks,Electricity,New,Solarpanel 9,,,,,,Zonnepaneel 9
+FeelSolarpanel_10,blocks,Electricity,New,Solarpanel 10,,,,,,Zonnepaneel 10
+FeelSolarpanel_11,blocks,Electricity,New,Solarpanel 11,,,,,,Zonnepaneel 11
+FeelSolarpanel_12,blocks,Electricity,New,Solarpanel 12,,,,,,Zonnepaneel 12
+FeelSolarpanel_13,blocks,Electricity,New,Solarpanel 13,,,,,,Zonnepaneel 13
+FeelSolarpanel_14,blocks,Electricity,New,Solarpanel 14,,,,,,Zonnepaneel 14
+FeelSolarpanel_15,blocks,Electricity,New,Solarpanel On Wheel 1,,,,,,Zonnepaneel 15
+FeelSolarpanel_16,blocks,Electricity,New,Solarpanel On Wheel 2,,,,,,Zonnepaneel 16
+FeelSolarpanel_17,blocks,Electricity,New,Solarpanel On Wheel 3,,,,,,Zonnepaneel 17
+FeelSolarpanelDesc,blocks,Electricity,New,Custom solarpanel,,,,,,Zonnepaneel
+FeelSolarpanelSmallBlockVariantHelper,blocks,Electricity,New,Solarpanel Small Variant Helper,,,,,,Zonnepaneel
+FeelSolarpanelMediumBlockVariantHelper,blocks,Electricity,New,Solarpanel Medium Variant Helper,,,,,,Zonnepaneel
+FeelSolarpanelLargeBlockVariantHelper,blocks,Electricity,New,Solarpanel Large Variant Helper,,,,,,Zonnepaneel
+FeelSolarpanelPortableBlockVariantHelper,blocks,Electricity,New,Solarpanel Portable Variant Helper,,,,,,Zonnepaneel
