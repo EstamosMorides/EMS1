@@ -119,6 +119,15 @@ Loot Drop Probability Differences:
 
 ### <a id="em"></a>#EstamosMorides Custom Mods/Settings
 
+* Increased Skill Points per Level to **3**
+* Increased Gore Animal Blocks (0.0012)
+* Can Pickup Spike & Barbed Traps
+* Firelog: New item to use as fuel aswell as wood. Included recipe to craft from backpack.
+* Bicycle & Parts in Dumpster for lower stages
+* Improve quantity and prob in BirdsNest. Also drop seeds
+
+
+
 ---
 
 [ui]: <https://7daystodiemods.com/ramos-backpack-xui/> "Ramos XUI"
