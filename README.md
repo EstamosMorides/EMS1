@@ -11,6 +11,7 @@
 * [Alternative Ammo Icons](#ui2)
 * [AOO vehicles](#v1)
 * [Better Resource Harvest](#qol2)
+* [Boosted Supply Crates](#qol8)
 * [CTVI - Dew Collectors](#qol4)
 * [Imagine: Better Food](#qol5)
 * [Oakraven - Bee Hives](#ocb)
@@ -122,6 +123,13 @@ Loot Drop Probability Differences:
 ![qol7img]<br>
 Automatically stop burning fuel when production or melting is finished
 
+#### <a id="qol8"></a>[Boosted Supply Crates][qol8]
+![qol8img]
+![qol8img2]
+![qol8img3]
+![qol8img4]<br>
+An attempt at a boosted supply crate that isn't completely overpowered
+
 ### <a id="em"></a>#EstamosMorides Custom Mods/Settings
 
 * Increased Skill Points per Level to **3**
@@ -175,6 +183,12 @@ Automatically stop burning fuel when production or melting is finished
 
 [qol7]: <https://www.nexusmods.com/7daystodie/mods/1884> "OCB - Stop Fuel Waste"
 [qol7img]: <https://staticdelivery.nexusmods.com/mods/1059/images/1884/1884-1641759392-703599837.jpeg>
+
+[qol8]: <https://www.nexusmods.com/7daystodie/mods/3169> "Boosted Supply Crates"
+[qol8img]: <https://staticdelivery.nexusmods.com/mods/1059/images/3169/3169-1688513606-1599877922.png>
+[qol8img2]: <https://staticdelivery.nexusmods.com/mods/1059/images/3169/3169-1688513606-141489457.png>
+[qol8img3]: <https://staticdelivery.nexusmods.com/mods/1059/images/3169/3169-1688513611-1557064034.png>
+[qol8img4]: <https://staticdelivery.nexusmods.com/mods/1059/images/3169/3169-1688513610-1546932730.png>
 
 [oc]: <https://7daystodiemods.com/oakraven-collection/> "Oakraven Collection"
 [ocb]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-3.jpg>
