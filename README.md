@@ -16,6 +16,7 @@
 * [Oakraven - Bee Hives](#ocb)
 * [Oakraven - Chicken Coops](#occ)
 * [Oakraven - Rock Drill](#ocd)
+* [OCB Stop Fuel Waste](#qol7)
 * [Ramos XUI](#ui1)
 * [Rolyatja - Increased Zombie Loot Bags](#qol6)
 * [Shotgun Pack](#guns3)
@@ -117,6 +118,9 @@ Loot Drop Probability Differences:
 * Radiated Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 12% (4x Increase)
 * Demolisher Zombie Drop Chance: LootProb (Old) = 3% - LootProb (New) = 12% (4x Increase)
 
+#### <a id="qol7"></a>[OCB - Stop Fuel Waste][qol7]
+![qol7img]<br>
+Automatically stop burning fuel when production or melting is finished
 
 ### <a id="em"></a>#EstamosMorides Custom Mods/Settings
 
@@ -168,6 +172,9 @@ Loot Drop Probability Differences:
 
 [qol6]: <https://www.nexusmods.com/7daystodie/mods/2414> "Rolyatja - Increased Zombie Loot Bags"
 [qol6img]: <https://staticdelivery.nexusmods.com/mods/1059/images/headers/2414_1662689024.jpg>
+
+[qol7]: <https://www.nexusmods.com/7daystodie/mods/1884> "OCB - Stop Fuel Waste"
+[qol7img]: <https://staticdelivery.nexusmods.com/mods/1059/images/1884/1884-1641759392-703599837.jpeg>
 
 [oc]: <https://7daystodiemods.com/oakraven-collection/> "Oakraven Collection"
 [ocb]: <https://7daystodiemods.com/wp-content/uploads/2023/06/7-days-to-die-oakraven-collection-additional-screenshot-3.jpg>
