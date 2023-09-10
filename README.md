@@ -17,6 +17,7 @@
 * [Oakraven - Chicken Coops](#occ)
 * [Oakraven - Rock Drill](#ocd)
 * [Ramos XUI](#ui1)
+* [Rolyatja - Increased Zombie Loot Bags](#qol6)
 * [Shotgun Pack](#guns3)
 * [Working Ovens](#qol3)
 * [#EstamosMorides Mods](#em)
