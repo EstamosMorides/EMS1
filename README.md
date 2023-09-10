@@ -1,9 +1,9 @@
 # #EstamosMorides Season 1
 
-## Settings
-``` xml
-
-```
+## Map 
+[Download](/Map/7%20Days%20to%20Die%20Airport-2786-2-3-0-1693382065.zip)
+![Map](https://staticdelivery.nexusmods.com/mods/1059/images/2786/2786-1688867971-1313054947.png)
+![Airport](https://staticdelivery.nexusmods.com/mods/1059/images/2786/2786-1693382092-1182799588.jpeg)
 
 ## Mods
 * [5.56 Gun Pack](#ui1)
